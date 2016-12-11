@@ -1,30 +1,103 @@
 ---
-title: "Assignment"
+title: "Assignment 6"
+author: "null"
 output:
-  word_document: default
-  pdf_document: default
+  pdf_document
+Date: '2016-12-11'
 ---
 
-```{r setup, include=T}
-knitr::opts_chunk$set(echo = TRUE)
+#Question 1: Reflection Principle
+Integral both sides of 
+$$dS_t = 0dt + 2dW_t$$
+we get 
+$$S_t = 2W_t$$ 
+where $W_t$ is normal distribution with mean equal to 0, and variance equal to 1. 
+
+Here choose N to be (2000,4000,6000,8000,10000), and compare N1 and N2 independently.
+
+```{r echo=FALSE}
+# set five different N values, all of them no less than 2000
+Ns <- c(2000,4000,6000,8000,10000)
+T <- 1:10
+N_output <- matrix(rep(NA,15),5)#make a container for different N1,N2
+
+for (i in 1:5) {
+  cat("N",Ns[i],"\n")
+  N <- Ns[i]
+  S <- matrix(2*rnorm(n = N*(length(T) -1), mean = 0, sd = 1),N,length(T) -1)
+  S <- cbind(rep(0,N),t(apply(S,1,cumsum)))
+  #cummulate sum S over T
+  
+  N1 <- which(S[,10] < 2 & (apply(S[,1:9],1, function(x) sum(x>5)) > 0))
+  N2 <- which(S[,10] > 8)
+  #indicate the paths satisfy condition one and two
+  
+  plot(T, S[1,], xlab = "Time", ylab = "Stock Price",
+       type = 'l',lwd = '0.2',ylim = c(-20,20))
+  apply(S[2:N,],1,function(x,T) lines(T,x, lwd = '0.2'),T=T)
+  #plot the random walk
+  
+  N_output[i,] <- c(N,length(N1),length(N2))
+  #save the value of N1,N2 for each N
+  }
+# for different N values, output the random walk outcome
+
+N_output <- as.data.frame(N_output)
+colnames(N_output) <- c("N","N1","N2")
+N_output
+```
+As we can see, N2 is always bigger nearly twice than N1.
+
+
+#Question 2: ggmap
+Since ggmap cannot reliably geocde colloquial place name like "Brown University", we need to specify the location of ivy leagues. Then we can coding the longitude and latitude of these institutions by geocode the locations.
+
+```{r echo = FALSE,message=FALSE,warning=FALSE}
+library(ggmap)
+#input the institution and location of ivy leagues
+ivy_league <- data.frame(institution = c("Brown University","Columbia University","Cornell University","Dartmouth College","Harvard University","Princeton University","University of Pennsylvania","Yale University"
+), location = c("Providence RI","New York City NY","Ithaca NY","Hanover NH","Cambridge MA","Philadelphia PE","Princeton NJ","New Haven CO"
+))
+
+LatLon <- sapply(as.character(ivy_league[,2]), geocode)
+#coding the longitude and latitude
+
+LatLon <- as.data.frame(matrix(unlist(LatLon),8,byrow = T))
+colnames(LatLon) <- c("Longitude","Latitude")
+#tranfer into data frame
+
+Institution <- as.character(ivy_league$institution)
+#extract university names
+
+mymap <- get_map(location = c(Longitude = mean(LatLon$Longitude), 
+                            Latitude = mean(LatLon$Latitude)),
+               source="google", 
+               maptype="terrain", 
+               zoom=6)
+ggmap(mymap,fullpage = TRUE) + 
+  geom_point(data = LatLon, 
+             aes(x = Longitude, y = Latitude,colour = Institution),
+             size = 3)
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+#Bonus question
+The plot 3D picture cannot embedded into pdf with Rmarkdown. Therefore, here echo the script, indicating one of the possible solutions.
+```{r}
+library(rgl)
+point <- as.data.frame(matrix(runif(15),5,3))
+#generate five different points
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+interleave <- function(v1,v2){
+  as.vector(rbind(v1,v2))
+}
 
-```{r cars}
-summary(cars)
+plot3d(point, type = "s", size = 2, 
+       col = c("red","green","blue","yellow","purple")
+       )
+segments3d(interleave(point,point),
+           col = c("red","green","blue","yellow","purple"))
+text3d(point,texts=c("A","B","C","D","E"))
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
