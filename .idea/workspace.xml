@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/task.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task.py" afterPath="$PROJECT_DIR$/src/task.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,11 @@
       <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="297" column="8" lean-forward="false" selection-start-line="297" selection-start-column="8" selection-end-line="297" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="13" selection-end-column="65" />
               <folding>
-                <element signature="e#450#459#0" expanded="true" />
-                <element signature="e#3628#8584#0" expanded="false" />
+                <element signature="e#448#457#0" expanded="true" />
+                <element signature="e#3626#8582#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -155,11 +155,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="297" column="8" lean-forward="false" selection-start-line="297" selection-start-column="8" selection-end-line="297" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="13" selection-end-column="65" />
           <folding>
-            <element signature="e#450#459#0" expanded="true" />
-            <element signature="e#3628#8584#0" expanded="false" />
+            <element signature="e#448#457#0" expanded="true" />
+            <element signature="e#3626#8582#0" expanded="false" />
           </folding>
         </state>
       </provider>

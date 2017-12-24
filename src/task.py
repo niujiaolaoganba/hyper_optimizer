@@ -4,8 +4,8 @@
 @brief: 构造 learner类，feature类，
         task类，optimizer类，
         及ensemble, stacking相关类
-@todo: 相关脚本待解决
-       ModelParamSpace
+@todo:
+       ** ModelParamSpace **
        Config(FEAT_DIR, FEAT_FILE_SAVE, OUTPUT_DIR, SUBM_DIR, FIG_DIR)
        pkl_utils(load_data)
        logger
@@ -295,5 +295,5 @@ class TaskOptimizer:
         else:
             self.logger.info("     %d secs" % _sec)
         self.logger.info("-"*50)
-        
+
 
