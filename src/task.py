@@ -5,13 +5,13 @@
         task类，optimizer类，
         及ensemble, stacking相关类
 @todo:
-       ** ModelParamSpace **
-       Config(FEAT_DIR, FEAT_FILE_SAVE, OUTPUT_DIR, SUBM_DIR, FIG_DIR)
-       pkl_utils(load_data)
-       logger
-       dist_utiles(rmse)
-       为什么predict_proba需要用learner.learner
-       学习hyperopt包，重点fmin, tpe, hp, STATUS_OK, Tirals, space_eval
+ModelParamSpace
+Config(FEAT_DIR, FEAT_FILE_SAVE, OUTPUT_DIR, SUBM_DIR, FIG_DIR)
+pkl_utils(load_data)
+logger
+dist_utiles(rmse)
+为什么predict_proba需要用learner.learner
+学习hyperopt包，重点fmin, tpe, hp, STATUS_OK, Tirals, space_eval  
 """
 
 import os
@@ -22,10 +22,13 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import Lasso, Ridge, BayesianRidge
 from sklearn.ensemble import ExtraTeesRegressor, RandomForestRegressor, GradientBoostingRegressor
-from model_param_space import ModelParamSpace
-import config
-
 from hyperopt import fmin, tpe, hp, STATUS_OK, Tirals, space_eval
+
+
+import config
+from model_param_space import ModelParamSpace
+from utils.skl_utils import SVR, LinearSVR, KNNRegressor, AdaBoostRegressor, RandomRidge
+
 
 
 class Learner:
@@ -44,6 +47,20 @@ class Learner:
             return Ridge(**self.param_dict)
         if self.learner_name == 'reg_skl_bayesian_ridge':
             return BayesianRidge(**self.param_dict)
+        if self.learner_name == 'reg_skl_svr':
+            return SVR(**self.param_dict)
+        if self.learner_name == 'reg_skl_lsvr':
+            return LinearSVR(**self.param_dict)
+        if self.learner_name == 'reg_skl_knn':
+            return KNNRegressor(**self.param_dict)
+        if self.learner_name == 'reg_skl_etr':
+            return ExtraTeesRegressor(**self.param_dict)
+        if self.learner_name == 'reg_skl_rf':
+            return RandomForestRegressor(**self.param_dict)
+        if self.learner_name == 'reg_skl_gbm':
+            return GradientBoostingRegressor(**self.param_dict)
+        if self.learner_name == 'reg_skl_adaboost':
+            return AdaBoostRegressor(**self.param_dict)
 
         return None
 
