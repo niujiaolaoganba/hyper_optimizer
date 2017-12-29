@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model_param_space.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/skl_utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kaggle.iml" afterPath="$PROJECT_DIR$/.idea/kaggle.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/splitter.py" afterPath="$PROJECT_DIR$/src/splitter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task.py" afterPath="$PROJECT_DIR$/src/task.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/skl_utils.py" afterPath="$PROJECT_DIR$/src/utils/skl_utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,15 +18,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="task.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="59" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="13" selection-end-column="59" />
+            <state relative-caret-position="216">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
-                <element signature="e#395#404#0" expanded="true" />
-                <element signature="e#4376#9332#0" expanded="false" />
+                <element signature="e#4374#9330#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splitter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/splitter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="e#136#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -36,8 +55,8 @@
       <file leaf-file-name="model_param_space.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="44" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="663">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#199#217#0" expanded="true" />
               </folding>
@@ -48,13 +67,13 @@
       <file leaf-file-name="skl_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/skl_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="-554">
+              <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding>
                 <element signature="e#177#195#0" expanded="true" />
-                <element signature="e#1197#1854#0" expanded="false" />
-                <element signature="e#1880#2679#0" expanded="false" />
-                <element signature="e#2710#3759#0" expanded="false" />
+                <element signature="e#1198#1855#0" expanded="false" />
+                <element signature="e#1881#2680#0" expanded="false" />
+                <element signature="e#2711#3760#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -76,8 +95,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/model_param_space.py" />
-        <option value="$PROJECT_DIR$/src/utils/skl_utils.py" />
         <option value="$PROJECT_DIR$/src/task.py" />
+        <option value="$PROJECT_DIR$/src/splitter.py" />
+        <option value="$PROJECT_DIR$/src/utils/skl_utils.py" />
+        <option value="$PROJECT_DIR$/src/config.py" />
       </list>
     </option>
   </component>
@@ -366,43 +387,59 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#395#404#0" expanded="true" />
-            <element signature="e#4376#9332#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/skl_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#177#195#0" expanded="true" />
-            <element signature="e#1197#1854#0" expanded="false" />
-            <element signature="e#1880#2679#0" expanded="false" />
-            <element signature="e#2710#3759#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="e#199#217#0" expanded="true" />
+            <element signature="e#4374#9330#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="216">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
-            <element signature="e#395#404#0" expanded="true" />
-            <element signature="e#4376#9332#0" expanded="false" />
+            <element signature="e#4374#9330#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#199#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/skl_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-554">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#177#195#0" expanded="true" />
+            <element signature="e#1198#1855#0" expanded="false" />
+            <element signature="e#1881#2680#0" expanded="false" />
+            <element signature="e#2711#3760#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splitter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#136#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

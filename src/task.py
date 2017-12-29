@@ -11,7 +11,7 @@ pkl_utils(load_data)
 logger
 dist_utiles(rmse)
 为什么predict_proba需要用learner.learner
-学习hyperopt包，重点fmin, tpe, hp, STATUS_OK, Tirals, space_eval  
+学习hyperopt包，重点fmin, tpe, hp, STATUS_OK, Tirals, space_eval
 """
 
 import os

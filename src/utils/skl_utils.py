@@ -13,7 +13,7 @@ import sklearn.ensemble
 from sklearn.linear_model import Ridge
 from sklearn.tee import DecisionTreeRegressor, ExtraTreeRegressor
 from sklearn.pipeline import Pipeline
-from  sklear.preprocessing import StandarScaler, PolynomialFeatures
+from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 
 from . import dist_utils
 

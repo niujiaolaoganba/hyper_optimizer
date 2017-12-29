@@ -80,10 +80,25 @@ class HomedepotSplitter:
 		puid_train = sorted(list(puid_train))
 		return puid_train
 
+	def _get_df_idx(self, df, col, values):
+		return np.where(df[col].isin(values))[0]
+
 	def split(self):
+
 		if self.verbose:
 			print("*"*50)
-			print("Naive split")
+			print("Original Train and Test Split")
+        puid_train = self._check_split(self.dfTrain, self.dfTest, "product_uid", "actual")
+        term_train = self._check_split(self.dfTrain, self.dfTest, "search_term", "actual")
+
+        if self.verbose:
+            print("*"*50)
+            print("Naive Split")
+        rs = ShuffleSplit(n=self.dfTrain.shape[0], n_iter=1, test_size=0.69, random_state=self.random_state)
+        for trainInd, validInd in rs:
+            dfTrain2 = self.
+
+
 
 
 
