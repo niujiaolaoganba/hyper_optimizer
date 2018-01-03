@@ -6,7 +6,7 @@
         及ensemble, stacking相关类
 @todo:
 ModelParamSpace
-Config(FEAT_DIR, FEAT_FILE_SAVE, OUTPUT_DIR, SUBM_DIR, FIG_DIR)
+Config(FEAT_DIR, OUTPUT_DIR, SUBM_DIR, FIG_DIR)
 pkl_utils(load_data)
 logger
 dist_utiles(rmse)
