@@ -1,6 +1,10 @@
 # kaggle project
 **根据chenglong chen的代码，写一套自己project，后期尝试用于一些比赛，以及工作使用。**  
 我将在这个文档记录这个项目的进度。
+### 2018-01-05  
+完成data_processor.py
+
+
 ### 2018-01-03  
 完成data_preparer.py, feature_base, feature_basic, np_utils
 
