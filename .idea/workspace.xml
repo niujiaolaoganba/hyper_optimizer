@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/simple_one/model_param_space.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/simple_one/run_model.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/simple_one/test_hyperopt.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/pkl_util.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/kaggle.iml" afterPath="$PROJECT_DIR$/.idea/kaggle.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +42,8 @@
       <file leaf-file-name="run_model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple_one/run_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="62" column="30" lean-forward="false" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="296">
+              <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
               <folding>
                 <element signature="e#489#498#0" expanded="true" />
               </folding>
@@ -742,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple_one/run_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="62" column="30" lean-forward="false" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="296">
+          <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
           <folding>
             <element signature="e#489#498#0" expanded="true" />
           </folding>
