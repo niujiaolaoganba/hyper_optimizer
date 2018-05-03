@@ -152,7 +152,7 @@ class TaskOptimizer:
 
 
 if __name__ == "__main__":
-    learner_name = 'clf_skl_gbm'
+    learner_name = 'clf_skl_lr'
     data = pd.read_csv('./data/model_data.csv')
     X = data.tags
     y = data.is_reg
