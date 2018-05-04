@@ -1,0 +1,2 @@
+task_mode learner train_loss test_loss best_time best_params 
+stacking   ensemble   0.0014   0.8259   11 mins   {'C': 0.04287643218456258, 'penalty': 'l1', 'random_state': 42} 

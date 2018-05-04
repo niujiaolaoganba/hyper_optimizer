@@ -1,33 +1,3 @@
-## 做个代码进度管理  
-格式 记录日期+todo
-### 2018-01-05  
-@todo:  
-学习regex
-
-
-### 2018-01-03  
-@todo:  
-dist_utils,  
-data_processor  
-
-
-### 2017-12-27
-@todo：
-dist_utils
-  
-@todo:
-skl_utils  
-config, RANDOM_SEED, NUM_CORES  
-学习hyperopt，hp  
-学习回归模型skl_lasso，skl_ridge，skl_bayesian_ridge
-
-
-### 2017-12-24
-@todo:
-ModelParamSpace  
-Config(FEAT_DIR, FEAT_FILE_SAVE, OUTPUT_DIR, SUBM_DIR, FIG_DIR)  
-pkl_utils(load_data)  
-logger  
-dist_utiles(rmse)  
-为什么predict_proba需要用learner.learner  
-学习hyperopt包，重点fmin, tpe, hp, STATUS_OK, Tirals, space_eval   
+## 用于用于模型调参和模型融合
+### 基于hyperopt做超参搜索
+### 初级的模型超参搜索打成日志，用于level2 stacking

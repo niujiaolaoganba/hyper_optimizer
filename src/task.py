@@ -1,22 +1,13 @@
 # -*- coding: utf-8 -*-
 """
 @author: Charles Liu <guobinliulgb@gmail.com>
-@brief: 构造 learner类，feature类，
-        task类，optimizer类，
-        及ensemble, stacking相关类
-@todo:
-ModelParamSpace
-Config(FEAT_DIR, OUTPUT_DIR, SUBM_DIR, FIG_DIR)
-pkl_utils(load_data)
-logger
-dist_utiles(rmse)
-为什么predict_proba需要用learner.learner
-学习hyperopt包，重点fmin, tpe, hp, STATUS_OK, Tirals, space_eval
+@brief: 构造 learner类，ensemblelearner类，
+        task类，optimizer类
 """
 
 import os
 import time
-from optparse import OptionParser
+import datetime
 
 import numpy as np
 import pandas as pd
@@ -28,7 +19,12 @@ from hyperopt import fmin, tpe, hp, STATUS_OK, Tirals, space_eval
 import config
 from model_param_space import ModelParamSpace
 from utils.skl_utils import SVR, LinearSVR, KNNRegressor, AdaBoostRegressor, RandomRidge
+from utils import logging_utils
 
+learner_space = {
+    "single": ["reg_xgb_tree","reg_skl_lasso","reg_skl_gbm","reg_ensemble"],
+    "stacking": ["ensemble",],
+}
 
 
 class Learner:
@@ -80,59 +76,39 @@ class Learner:
 
         return y_pred
 
-class Feature:
-    def __init__(self, feature_name):
-        self.feature_name = feature_name
-        self.data_dict = self._load_data_dict()
-        self.splitter = self.data_dict['splitter']
-        self.n_iter = self.data_dict['n_iter']
+class EnsembleLearner:
+    def __init__(self, learner_dict):
+        self.learner_dict = learner_dict
 
     def __str__(self):
-        return self.feature_name
+        return "EnsembleLearner"
 
-    def _load_data_dict(self):
-        fname = os.path.join(config.FEAT_DIR + "/Combine",
-                             self.feature_name + config.FEAT_FILE_SUFFIX)
-        data_dict = pkl_utiles._load(fname)
-        return data_dict
+    def fit(self, X, y):
+        for learner_name in self.learner_dict.keys():
+            p = self.learner_dict[learner_name]["param"]
+            l = Learner(learner_name, p)._get_learner()
+            if l is not None:
+                self.learner_dict[learner_name]["learner"] = l.fit(X, y)
+            else:
+                self.learner_dict[learner_name]["learner"] = None
+        return self
 
-    def _get_train_valid_data(self, i):
-        """
-        split data into train, valid for CV
-        :param i:
-        :return:
-        """
-        X_basic_train = self.data_dict["X_train_basic"][self.splitter[i][0], :]
-        X_basic_valid = self.data_dict["X_train_basic"][self.splitter[i][1], :]
-        if self.data_dict["basic_only"]:
-            X_train, X_valid = X_basic_train, X_basic_valid
-        else:
-            X_train_cv = self.data_dict["X_train_cv"][self.splitter[i][0], :, i]
-            X_valid_cv = self.data_dict["X_train_cv"][self.splitter[i][1], :, i]
-        y_train = self.data_dict['y_train'][self.splitter[i][0]]
-        y_valid = self.data_dict['y_train'][self.splitter[i][1]]
-
-        return X_train, y_train, X_valid, y_valid
-
-    def _get_train_test_data(self):
-        X_basic = self.data_dict["X_train_basic"]
-        if self.data_dict["basic_only"]:
-            X_train = X_basic
-        else:
-            X_train = np.hstack((X_basic, self.data_dict["X_train_cv_all"]))
-        X_test = self.data_dict["X_test"]
-        y_train = self.data_dict["y_train"]
-
-        return X_train, y_train, X_test
-
-    def _get_feature_names(self):
-        return self.data_dict["feature_names"]
+    def predict(self, X):
+        y_pred = np.zeros((X.shape[0]), dtype=float)
+        w_sum = 0.
+        for learner_name in self.learner_dict.keys():
+            l = self.learner_dict[learner_name]["learner"]
+            if l is not None:
+                w = self.learner_dict[learner_name]["weight"]
+                y_pred += w * l.predict(X)
+                w_sum += w
+        y_pred /= w_sum
+        return y_pred
 
 
 class Task:
-    def __init__(self, learner, feature, suffix, logger, verbose=True, plot_importance=False):
+    def __init__(self, X_train, y_train, kfold, X_test, y_test, learner, suffix, logger, verbose=True, plot_importance=False):
         self.learner = learner
-        self.feature = feature
         self.suffix = suffix
         self.logger = logger
         self.verbose = verbose
@@ -142,7 +118,7 @@ class Task:
         self.rmse_cv_std = 0
 
     def __str__(self):
-        return "[Feats@%s]_[Learner@%s]%s" % (str(self.feature), str(self.learner), str(self.suffix))
+        return "[Learner@%s]%s" % (str(self.learner), str(self.suffix))
 
     def _print_param_dict(self, d, prefix="     ", incr_prefix = "    "):
         for k, v in sorted(d.items()):
@@ -248,69 +224,74 @@ class Task:
         return self
 
 class TaskOptimizer:
-    def __init__(self, task_mode, leaner_name, feature_name, logger,
-                 max_evals = 100, verbose = True, refit_once = False, plot_importance = Fasle):
-        self.task_mode = task_mode
-        self.leaner_name = leaner_name
-        self.feature_name = feature_name
-        self.feature = self._get_feature()
-        self.logger = logger
+    def __init__(self, X_train, y_train, X_test, y_test, cv = 5, max_evals = 2, verbose=True):
+        self.X_train = X_train
+        self.y_train = y_train
+        self.X_test = X_test
+        self.y_test = y_test
+        self.n_iter = cv,
         self.max_evals = max_evals
         self.verbose = verbose
-        self.refit_once = refit_once
-        self.plot_importance = plot_importance
         self.trial_counter = 0
-        self.model_param_space = ModelParamSpace(self.leaner_name)
 
-    def _get_feature(self):
-        if self.task_mode == "single":
-            feature = Feature(self.feature_name)
-        elif self.task_mode == "stacking":
-            feature = StackingFeature(self.feature_name)
-        return feature
-
-    def _obj(self, param_dict):
+    def _obj(self, param_dict, task_mode):
         self.trial_counter += 1
         param_dict = self.model_param_space._convert_int_param(param_dict)
         learner = Learner(self.leaner_name, param_dict)
         suffix = "_[Id@%s]" % str(self.trial_counter)
-        if self.task_mode == 'single':
-            self.task = Task(learner, self.feature, suffix, self.logger, self.verbose, self.plot_importance)
-        elif self.task_mode == "stacking":
-            self.task = StackingTask(learner, self.feature, suffix, self.logger, self.verbose, self.refit_once)
+        if task_mode == 'single':
+            self.task = Task(learner, self.X_train, self.y_train, self.X_test, self.y_test, self.n_iter,
+                             suffix, self.logger, self.verbose)
+        elif task_mode == "stacking":
+            stacking_level1_train =
+            stacking_level1_test =
+            self.task = Task(learner, stacking_level1_train, self.y_train, stacking_level1_test, self.y_test, self.n_iter,
+                             suffix, self.logger, self.verbose)
         self.task.go()
-        ret = {
-            "loss": self.task.rmse_cv_mean,
+        result = {
+            "loss": -self.task.test_auc,
             "attachments": {
-                "std": self.task.rmse_cv_std,},
+                "train_auc": self.task.train_auc,
+                "train_logloss": self.task.train_logloss,
+                "train_time": self.task.train_time,
+            },
             "status": STATUS_OK,
         }
-        return ret
+        return result
 
     def run(self):
-        start = time.time()
-        trials = Trials()
-        best = fmin(self._obj, self.model_param_space._build_space(), tpe.suggest, self.max_evals, trials)
-        best_params = space_eval(self.model_param_space._build_space(), best)
-        best_params = self.model_param_space._convert_int_param(best_params)
-        trial_rmses = np.asarray(trials.loss(), dtype = float)
-        best_ind = np.argmin(trial_rmses)
-        best_rmse_mean = trial_rmses[best_ind]
-        best_rmse_std = trials.trial_attachments(trials.trials[best_ind])["std"]
-        self.logger.info("-"*50)
-        self.logger.info("Best RMSE")
-        self.logger.info("     Mean: %.6f" % best_rmse_mean)
-        self.logger.info("     std: %.6f" % best_rmse_std)
-        self.logger.info("Best params")
-        self.task._print_param_dict(best_params)
-        end = time.time()
-        _sec = end - start
-        _min = int(_sec/60.)
-        self.logger.info("Time")
-        if _min > 0:
-            self.logger.info("     %d mins" % _min)
-        else:
-            self.logger.info("     %d secs" % _sec)
-        self.logger.info("-"*50)
+        line_index = 1
+        for task_mode in ('single', 'stacking'):
+            print('start %s model task') % task_mode
+            for learner in learner_space[task_mode]:
+                print('optimizing %s') % learner
+                self.leaner_name = learner
+                self.model_param_space = ModelParamSpace(self.leaner_name)
+                start = time.time()
+                trials = Trials()
+                logname = "%s_%s_%s.log" % (task_mode,learner,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+                self.logger = logging_utils._get_logger(config.LOG_DIR, logname)
+                best = fmin(lambda param: self._obj(param, task_mode), self.model_param_space._build_space(), tpe.suggest, self.max_evals, trials)
+
+                end = time.time()
+                time_cost = time_utils.time_diff(start, end)
+                self.logger.info("Hyperopt_Time")
+                self.logger.info("     %s" % time_cost)
+                self.logger.info("-" * 50)
+
+                best_params = space_eval(self.model_param_space._build_space(), best)
+                best_params = self.model_param_space._convert_int_param(best_params)
+                trial_loss = np.asarray(trials.loss(), dtype=float)
+                best_ind = np.argmin(trial_loss)
+                test_auc = - trial_loss[best_ind]
+                train_auc = trials.trial_attachments(trials.trials[best_ind])["train_auc"]
+
+                with open(config.MODEL_COMPARE, 'w+') as f:
+                    if line_index:
+                        line_index = 0
+                        f.writelines("task_mode   learner   test_auc   train_auc   best_time   best_params \n")
+                    f.writelines("%s   %s   %.4f   %.4f   %s   %s \n" % (task_mode, learner, test_auc, train_auc, best_time, best_params))
+
+
 
 

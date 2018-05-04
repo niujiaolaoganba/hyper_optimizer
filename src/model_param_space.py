@@ -2,12 +2,9 @@
 """
 @author: Charles Liu <guobinliulgb@gmail.com>
 @brief:
-
-@todo:
-**skl_utils**
-config, RANDOM_SEED, NUM_CORES
-学习hyperopt，hp
-学习回归模型skl_lasso，skl_ridge，skl_bayesian_ridge
+定义模型超参空间，模型name和空间的字典
+定义集成学习bagging的模型、参数空间、权重
+把参数转成整数的类
 """
 
 import numpy as np
@@ -134,4 +131,116 @@ param_space_reg_skl_adaboost = {
 
 
 
+
+# -------------------------------------- Ensemble ---------------------------------------------
+# 1. The following learners are chosen to build ensemble for their fast learning speed.
+# 2. In our final submission, we used fix weights.
+#    However, you can also try to optimize the ensemble weights in the meantime.
+param_space_reg_ensemble = {
+    # 1. fix weights (used in final submission)
+    "learner_dict": {
+        "reg_skl_ridge": {
+            "param": param_space_reg_skl_ridge,
+            "weight": 4.0,
+        },
+        "reg_keras_dnn": {
+            "param": param_space_reg_keras_dnn,
+            "weight": 1.0,
+        },
+        "reg_xgb_tree": {
+            "param": param_space_reg_xgb_tree,
+            "weight": 1.0,
+        },
+        "reg_skl_etr": {
+            "param": param_space_reg_skl_etr,
+            "weight": 1.0,
+        },
+        "reg_skl_rf": {
+            "param": param_space_reg_skl_rf,
+            "weight": 1.0,
+        },
+    },
+    # # 2. optimizing weights
+    # "learner_dict": {
+    #     "reg_skl_ridge": {
+    #         "param": param_space_reg_skl_ridge,
+    #         "weight": hp.quniform("reg_skl_ridge__weight", 1.0, 1.0, 0.1), # fix this one
+    #     },
+    #     "reg_keras_dnn": {
+    #         "param": param_space_reg_keras_dnn,
+    #         "weight": hp.quniform("reg_keras_dnn__weight", 0.0, 1.0, 0.1),
+    #     },
+    #     "reg_xgb_tree": {
+    #         "param": param_space_reg_xgb_tree,
+    #         "weight": hp.quniform("reg_xgb_tree__weight", 0.0, 1.0, 0.1),
+    #     },
+    #     "reg_skl_etr": {
+    #         "param": param_space_reg_skl_etr,
+    #         "weight": hp.quniform("reg_skl_etr__weight", 0.0, 1.0, 0.1),
+    #     },
+    #     "reg_skl_rf": {
+    #         "param": param_space_reg_skl_rf,
+    #         "weight": hp.quniform("reg_skl_rf__weight", 0.0, 1.0, 0.1),
+    #     },
+    # },
+}
+
+# -------------------------------------- All ---------------------------------------------
+param_space_dict = {
+    # xgboost
+    "reg_xgb_tree": param_space_reg_xgb_tree,
+    "reg_xgb_tree_best_single_model": param_space_reg_xgb_tree_best_single_model,
+    "reg_xgb_linear": param_space_reg_xgb_linear,
+    "clf_xgb_tree": param_space_clf_xgb_tree,
+    # sklearn
+    "reg_skl_lasso": param_space_reg_skl_lasso,
+    "reg_skl_ridge": param_space_reg_skl_ridge,
+    "reg_skl_bayesian_ridge": param_space_reg_skl_bayesian_ridge,
+    "reg_skl_random_ridge": param_space_reg_skl_random_ridge,
+    "reg_skl_lsvr": param_space_reg_skl_lsvr,
+    "reg_skl_svr": param_space_reg_skl_svr,
+    "reg_skl_knn": param_space_reg_skl_knn,
+    "reg_skl_etr": param_space_reg_skl_etr,
+    "reg_skl_rf": param_space_reg_skl_rf,
+    "reg_skl_gbm": param_space_reg_skl_gbm,
+    "reg_skl_adaboost": param_space_reg_skl_adaboost,
+    # keras
+    "reg_keras_dnn": param_space_reg_keras_dnn,
+    # rgf
+    "reg_rgf": param_space_reg_rgf,
+    # ensemble
+    "reg_ensemble": param_space_reg_ensemble,
+}
+
+int_params = [
+    "num_round", "n_estimators", "min_samples_split", "min_samples_leaf",
+    "n_neighbors", "leaf_size", "seed", "random_state", "max_depth", "degree",
+    "hidden_units", "hidden_layers", "batch_size", "nb_epoch", "dim", "iter",
+    "factor", "iteration", "n_jobs", "max_leaf_forest", "num_iteration_opt",
+    "num_tree_search", "min_pop", "opt_interval",
+]
+int_params = set(int_params)
+
+
+class ModelParamSpace:
+    def __init__(self, learner_name):
+        s = "Wrong learner_name, " + \
+            "see model_param_space.py for all available learners."
+        assert learner_name in param_space_dict, s
+        self.learner_name = learner_name
+
+    def _build_space(self):
+        return param_space_dict[self.learner_name]
+
+    def _convert_int_param(self, param_dict):
+        if isinstance(param_dict, dict):
+            for k,v in param_dict.items():
+                if k in int_params:
+                    param_dict[k] = int(v)
+                elif isinstance(v, list) or isinstance(v, tuple):
+                    for i in range(len(v)):
+                        self._convert_int_param(v[i])
+                elif isinstance(v, dict):
+                    self._convert_int_param(v)
+        return param_dict
 
