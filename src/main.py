@@ -1,23 +1,18 @@
-from utils import logging_utils
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from task import TaskOptimizer
-import datetime
-import config
 
-# 设置好日志
-logname = "hyperopt_optimizer_%s.log"%(datetime.datetime.now().strftime("%H-%m-%d-%H-%M"))
-logger = logging_utils._get_logger(config.LOG_DIR, logname)
+
 
 # 准备好数据
-train = pd.read_csv('../data/train.csv')
-test = pd.read_csv('../data/test.csv')
+train = pd.read_csv('../data/input/train.csv')
+test = pd.read_csv('../data/input/test.csv')
 tag_vec = CountVectorizer(tokenizer=lambda x: x.split(','))
 tag_vec.fit(train.tags)
 
-X_train = pd.DataFrame(tag_vec.transform(train.tags), columns = tag_vec.get_feature_names())
+X_train = pd.DataFrame(tag_vec.transform(train.tags).toarray(), columns = tag_vec.get_feature_names())
 y_train = train.is_apply
-X_test= pd.DataFrame(tag_vec.transform(test.tags), columns = tag_vec.get_feature_names())
+X_test= pd.DataFrame(tag_vec.transform(test.tags).toarray(), columns = tag_vec.get_feature_names())
 y_test = test.is_apply
 
 
