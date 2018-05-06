@@ -25,7 +25,7 @@ from utils import logging_utils, time_utils
 from utils.ensemble_learner import EnsembleLearner
 
 learner_space = {
-    "single": ["reg_xgb_tree","reg_skl_lasso","reg_skl_gbm","reg_ensemble"],
+    "single": ["clf_xgb_tree","clf_skl_lr","clf_skl_rf"],
     "stacking": ["ensemble",],
 }
 
@@ -65,6 +65,7 @@ class Task:
         self.y_test = y_test
         self.n_iter = n_iter
         self.suffix = suffix
+        self.logger = logger
         self.verbose = verbose
         self.test_auc = 0
         self.train_auc = 0
@@ -89,7 +90,7 @@ class Task:
             self.logger.info("     %s" % str(self.__str__()))
             self.logger.info("Param")
             self._print_param_dict(self.learner.param_dict)
-            self.learner.info("Result")
+            self.logger.info("Result")
             self.logger.info("     Run     AUC     Shape")
 
         auc_cv = np.zeros(self.n_iter)
@@ -103,13 +104,13 @@ class Task:
             self.learner.fit(X_train_cv, y_train_cv)
             y_pred = self.learner.predict_proba(X_valid_cv)
             y_pred_test = self.learner.predict_proba(self.X_test)
-            auc_cv[i] = roc_auc_score(y_valid_cv, y_pred)
+            auc_cv[i-1] = roc_auc_score(y_valid_cv, y_pred)
             stacking_feature_train[valid_index] = y_pred
             stacking_feature_test += y_pred_test
 
             # log
             self.logger.info("     {:>3}     {:>8}     {} x {}".format(
-                i+1, np.round(auc_cv[i],6), X_train_cv.shape[0], X_train_cv.shape[1]
+                i, np.round(auc_cv[i],6), X_train_cv.shape[0], X_train_cv.shape[1]
             ))
 
         stacking_feature_test /= self.n_iter
@@ -167,7 +168,7 @@ class TaskOptimizer:
 
     def _obj(self, param_dict, task_mode):
         self.trial_counter += 1
-        param_dict = self.model_param_space._convert_int_param(param_dict)
+        param_dict = self.param_space._convert_int_param(param_dict)
         learner = Learner(self.leaner_name, param_dict)
         suffix = "_[Id@%s]" % str(self.trial_counter)
         if task_mode == 'single':
@@ -201,26 +202,27 @@ class TaskOptimizer:
 
     def run(self):
         line_index = 1
+        self.param_space = ModelParamSpace()
         for task_mode in ('single', 'stacking'):
-            print('start %s model task') % task_mode
+            print('start %s model task' % task_mode)
             for learner in learner_space[task_mode]:
-                print('optimizing %s') % learner
+                print('optimizing %s' % learner)
                 self.leaner_name = learner
-                self.model_param_space = ModelParamSpace(self.leaner_name)
                 start = time.time()
                 trials = Trials()
                 logname = "%s_%s_%s.log" % (task_mode,learner,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
                 self.logger = logging_utils._get_logger(config.LOG_DIR, logname)
-                best = fmin(lambda param: self._obj(param, task_mode), self.model_param_space._build_space(), tpe.suggest, self.max_evals, trials)
+                best = fmin(lambda param: self._obj(param, task_mode), self.param_space._build_space(learner), tpe.suggest, self.max_evals, trials)
 
                 end = time.time()
                 time_cost = time_utils.time_diff(start, end)
                 self.logger.info("Hyperopt_Time")
                 self.logger.info("     %s" % time_cost)
                 self.logger.info("-" * 50)
+                print("Finished %d hyper train with %d-fold cv, took %s"%(self.max_evals, self.n_iter, time_cost))
 
-                best_params = space_eval(self.model_param_space._build_space(), best)
-                best_params = self.model_param_space._convert_int_param(best_params)
+                best_params = space_eval(self.param_space._build_space(learner), best)
+                best_params = self.param_space._convert_int_param(best_params)
                 trial_loss = np.asarray(trials.loss(), dtype=float)
                 best_ind = np.argmin(trial_loss)
                 test_auc = - trial_loss[best_ind]

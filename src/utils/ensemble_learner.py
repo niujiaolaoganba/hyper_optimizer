@@ -28,7 +28,6 @@ param_space_clf_xgb_tree = {
     "n_estimators" : hp.quniform("n_estimators", 100, 1000, 10),
     "learning_rate" : hp.qloguniform("learning_rate", np.log(0.002), np.log(0.1), 0.002),
     "grow_policy": hp.choice("grow_policy", ['depthwise', 'lossguide']),
-    "early_stopping_rounds": 50,
     "gamma": hp.loguniform("gamma", np.log(1e-10), np.log(1e1)),
     "reg_alpha" : hp.loguniform("reg_alpha", np.log(1e-10), np.log(1e1)),
     "reg_lambda" : hp.loguniform("reg_lambda", np.log(1e-10), np.log(1e1)),
@@ -87,8 +86,6 @@ param_space_ensemble = {
     #     },
     # },
 }
-
-
 
 int_params = [
     "num_round", "n_estimators", "min_samples_split", "min_samples_leaf",

@@ -9,9 +9,8 @@
 
 import numpy as np
 from hyperopt import hp
-from ensemble_learner import param_space_ensemble
+from utils.ensemble_learner import param_space_ensemble
 
-import config
 
 param_space_clf_xgb_tree = {
     # "booster": "gbtree",
@@ -20,7 +19,6 @@ param_space_clf_xgb_tree = {
     "n_estimators" : hp.quniform("n_estimators", 100, 1000, 10),
     "learning_rate" : hp.qloguniform("learning_rate", np.log(0.002), np.log(0.1), 0.002),
     "grow_policy": hp.choice("grow_policy", ['depthwise', 'lossguide']),
-    "early_stopping_rounds": 50,
     "gamma": hp.loguniform("gamma", np.log(1e-10), np.log(1e1)),
     "reg_alpha" : hp.loguniform("reg_alpha", np.log(1e-10), np.log(1e1)),
     "reg_lambda" : hp.loguniform("reg_lambda", np.log(1e-10), np.log(1e1)),
@@ -113,14 +111,11 @@ int_params = set(int_params)
 
 
 class ModelParamSpace:
-    def __init__(self, learner_name):
-        s = "Wrong learner_name, " + \
-            "see model_param_space.py for all available learners."
-        assert learner_name in param_space_dict, s
-        self.learner_name = learner_name
+    def __init__(self):
+        pass
 
-    def _build_space(self):
-        return param_space_dict[self.learner_name]
+    def _build_space(self, learner_name):
+        return param_space_dict[learner_name]
 
     def _convert_int_param(self, param_dict):
         if isinstance(param_dict, dict):
