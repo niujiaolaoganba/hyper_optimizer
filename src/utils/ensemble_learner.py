@@ -1,42 +1,39 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from xgboost import XGBClassifier
-from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
+from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier, GradientBoostingClassifier, \
+    AdaBoostClassifier
 from hyperopt import hp
 
 param_space_clf_skl_lr = {
-    "C": hp.loguniform("C", np.log(1e-10), np.log(1e10)),
+    "C": hp.loguniform("C", np.log(1e-7), np.log(1e2)),
     "penalty": hp.choice("penalty", ['l1', 'l2']),
     "random_state": 42,
 }
 
 param_space_clf_skl_rf = {
-    "n_estimators": hp.quniform("n_estimators", 100, 1000, 10),
-    "max_features": hp.quniform("max_features", 0.1, 1, 0.05),
-    "min_samples_split": hp.quniform("min_samples_split", 1, 15, 1),
-    "min_samples_leaf": hp.quniform("min_samples_leaf", 1, 15, 1),
-    "max_depth": hp.quniform("max_depth", 1, 10, 1),
+    "n_estimators": hp.quniform("skl_rf__n_estimators", 10, 1000, 10),
+    "max_features": hp.quniform("skl_rf__max_features", 0.3, 1, 0.05),
+    "min_samples_split": hp.quniform("skl_rf__min_samples_split", 5, 15, 1),
+    "min_samples_leaf": hp.quniform("skl_rf__min_samples_leaf", 5, 15, 1),
+    "max_depth": hp.quniform("skl_rf__max_depth", 2, 10, 1),
     "random_state": 42,
     "n_jobs": 8,
     "verbose": 0,
 }
 
 param_space_clf_xgb_tree = {
-    # "booster": "gbtree",
-    "objective": "binary:logistic",
-    "base_score": 0.5,
-    "n_estimators" : hp.quniform("n_estimators", 100, 1000, 10),
-    "learning_rate" : hp.qloguniform("learning_rate", np.log(0.002), np.log(0.1), 0.002),
-    "grow_policy": hp.choice("grow_policy", ['depthwise', 'lossguide']),
-    "gamma": hp.loguniform("gamma", np.log(1e-10), np.log(1e1)),
-    "reg_alpha" : hp.loguniform("reg_alpha", np.log(1e-10), np.log(1e1)),
-    "reg_lambda" : hp.loguniform("reg_lambda", np.log(1e-10), np.log(1e1)),
-    "min_child_weight": hp.loguniform("min_child_weight", np.log(1e-10), np.log(1e2)),
-    "max_depth": hp.quniform("max_depth", 1, 10, 1),
-    "subsample": hp.quniform("subsample", 0.1, 1, 0.05),
-    "colsample_bytree": hp.quniform("colsample_bytree", 0.1, 1, 0.05),
-    "colsample_bylevel": hp.quniform("colsample_bylevel", 0.1, 1, 0.05),
-    "nthread": 16,
+    'max_depth': hp.quniform('xgb_tree__max_depth', 2, 10, 1),
+    'subsample': hp.uniform('xgb_tree__subsample', 0.5, 1),
+    "n_estimators": hp.quniform("xgb_tree__n_estimators", 100, 1000, 10),
+    "learning_rate": hp.qloguniform("xgb_tree__learning_rate", np.log(0.002), np.log(0.1), 0.002),
+    "gamma": hp.loguniform("xgb_tree__gamma", np.log(1e-10), np.log(1e1)),
+    "reg_alpha": hp.loguniform("xgb_tree__reg_alpha", np.log(1e-10), np.log(1e1)),
+    "reg_lambda": hp.loguniform("xgb_tree__reg_lambda", np.log(1e-10), np.log(1e1)),
+    'min_child_weight': hp.loguniform('xgb_tree__min_child_weight', -16, 5),
+    'colsample_bytree': hp.uniform('xgb_tree__colsample_bytree', 0.5, 1),
+    'colsample_bylevel': hp.uniform('xgb_tree__colsample_bylevel', 0.5, 1),
+    "nthread": 8,
     "seed": 42,
 }
 # -------------------------------------- Ensemble ---------------------------------------------
@@ -46,45 +43,38 @@ param_space_clf_xgb_tree = {
 param_space_ensemble = {
     # 1. fix weights (used in final submission)
 
-        "clf_skl_lr": {
-            "learner":LogisticRegression,
-            "param": param_space_clf_skl_lr,
-            "weight": 4.0,
-        },
-        "clf_xgb_tree": {
-            "param": param_space_clf_xgb_tree,
-            "learner":XGBClassifier,
-            "weight": 1.0,
-        },
-        "clf_skl_rf": {
-            "param": param_space_clf_skl_rf,
-            "learner":RandomForestClassifier,
-            "weight": 1.0,
-        },
+    # "clf_skl_lr": {
+    #     "learner":LogisticRegression(),
+    #     "param": param_space_clf_skl_lr,
+    #     "weight": 4.0,
+    # },
+    # "clf_xgb_tree": {
+    #     "param": param_space_clf_xgb_tree,
+    #     "learner":XGBClassifier(),
+    #     "weight": 1.0,
+    # },
+    # "clf_skl_rf": {
+    #     "param": param_space_clf_skl_rf,
+    #     "learner":RandomForestClassifier(),
+    #     "weight": 1.0,
+    # },
 
     # # 2. optimizing weights
-    # "learner_dict": {
-    #     "reg_skl_ridge": {
-    #         "param": param_space_reg_skl_ridge,
-    #         "weight": hp.quniform("reg_skl_ridge__weight", 1.0, 1.0, 0.1), # fix this one
-    #     },
-    #     "reg_keras_dnn": {
-    #         "param": param_space_reg_keras_dnn,
-    #         "weight": hp.quniform("reg_keras_dnn__weight", 0.0, 1.0, 0.1),
-    #     },
-    #     "reg_xgb_tree": {
-    #         "param": param_space_reg_xgb_tree,
-    #         "weight": hp.quniform("reg_xgb_tree__weight", 0.0, 1.0, 0.1),
-    #     },
-    #     "reg_skl_etr": {
-    #         "param": param_space_reg_skl_etr,
-    #         "weight": hp.quniform("reg_skl_etr__weight", 0.0, 1.0, 0.1),
-    #     },
-    #     "reg_skl_rf": {
-    #         "param": param_space_reg_skl_rf,
-    #         "weight": hp.quniform("reg_skl_rf__weight", 0.0, 1.0, 0.1),
-    #     },
-    # },
+        "clf_skl_lr": {
+            "learner": LogisticRegression(),
+            "param": param_space_clf_skl_lr,
+            "weight": hp.quniform("clf_skl_lr__weight", 1.0, 1.0, 0.1),  # fix this one
+        },
+        "clf_xgb_tree": {
+            "learner": XGBClassifier(),
+            "param": param_space_clf_xgb_tree,
+            "weight": hp.quniform("reg_xgb_tree__weight", 0.0, 1.0, 0.1),
+        },
+        "clf_skl_rf": {
+            "learner": RandomForestClassifier(),
+            "param": param_space_clf_skl_rf,
+            "weight": hp.quniform("reg_skl_rf__weight", 0.0, 1.0, 0.1),
+        },
 }
 
 int_params = [
@@ -95,6 +85,7 @@ int_params = [
     "num_tree_search", "min_pop", "opt_interval",
 ]
 int_params = set(int_params)
+
 
 def convert_int_param(param_dict):
     if isinstance(param_dict, dict):
@@ -110,29 +101,30 @@ def convert_int_param(param_dict):
 
 
 class EnsembleLearner:
-    def __init__(self, learner_dict):
-        self.learner_dict = learner_dict
+    def __init__(self, param_dict):
+        self.param_dict = param_dict
 
     def __str__(self):
         return "EnsembleLearner"
 
     def fit(self, X, y):
-        for learner_name in self.learner_dict.keys():
-            p = convert_int_param(self.learner_dict[learner_name]["param"])
-            l = self.learner_dict[learner_name]["learner"](**p)
+        for learner_name in self.param_dict.keys():
+            p = convert_int_param(self.param_dict[learner_name]["param"])
+            l = self.param_dict[learner_name]["learner"]
+            l.set_params(**p)
             if l is not None:
-                self.learner_dict[learner_name]["learner"] = l.fit(X, y)
+                self.param_dict[learner_name]["learner"] = l.fit(X, y)
             else:
-                self.learner_dict[learner_name]["learner"] = None
+                self.param_dict[learner_name]["learner"] = None
         return self
 
     def predict(self, X):
         y_pred = np.zeros((X.shape[0]), dtype=float)
         w_sum = 0.
-        for learner_name in self.learner_dict.keys():
-            l = self.learner_dict[learner_name]["learner"]
+        for learner_name in self.param_dict.keys():
+            l = self.param_dict[learner_name]["learner"]
             if l is not None:
-                w = self.learner_dict[learner_name]["weight"]
+                w = self.param_dict[learner_name]["weight"]
                 y_pred += w * l.predict(X)
                 w_sum += w
         y_pred /= w_sum
@@ -141,11 +133,11 @@ class EnsembleLearner:
     def predict_proba(self, X):
         y_pred = np.zeros((X.shape[0]), dtype=float)
         w_sum = 0.
-        for learner_name in self.learner_dict.keys():
-            l = self.learner_dict[learner_name]["learner"]
+        for learner_name in self.param_dict.keys():
+            l = self.param_dict[learner_name]["learner"]
             if l is not None:
-                w = self.learner_dict[learner_name]["weight"]
-                y_pred += w * l.predict_proba(X)[:,1]
+                w = self.param_dict[learner_name]["weight"]
+                y_pred += w * l.predict_proba(X)[:, 1]
                 w_sum += w
         y_pred /= w_sum
         return y_pred

@@ -17,7 +17,7 @@ y_test = test.is_apply
 
 
 #跑任务
-optimizer = TaskOptimizer(X_train, y_train, X_test, y_test, cv = 5, max_evals = 2, verbose=True)
+optimizer = TaskOptimizer(X_train, y_train, X_test, y_test, cv = 3, max_evals = 9, verbose=True)
 optimizer.run()
 
 

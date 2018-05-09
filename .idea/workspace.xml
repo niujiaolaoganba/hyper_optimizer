@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_one/data/model_data.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_one/data/qz_andr.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_one/model_param_space.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_one/run_model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_one/test_hyperopt.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kaggle.iml" afterPath="$PROJECT_DIR$/.idea/kaggle.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model_param_space.py" afterPath="$PROJECT_DIR$/src/model_param_space.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task.py" afterPath="$PROJECT_DIR$/src/task.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/ensemble_learner.py" afterPath="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/kaggle.iml" afterPath="$PROJECT_DIR$/.idea/kaggle.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" afterPath="$PROJECT_DIR$/src/config.py" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
+      <change beforePath="$PROJECT_DIR$/src/model_param_space.py" afterPath="$PROJECT_DIR$/src/model_param_space.py" />
+      <change beforePath="$PROJECT_DIR$/src/task.py" afterPath="$PROJECT_DIR$/src/task.py" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ensemble_learner.py" afterPath="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
+      <change beforePath="$PROJECT_DIR$/test/wf.csv" afterPath="$PROJECT_DIR$/test/wf.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,23 +21,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kaggle$task.coverage" NAME="task Coverage Results" MODIFIED="1525531962102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/kaggle$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1519464927089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simple_one" />
-    <SUITE FILE_PATH="coverage/kaggle$main.coverage" NAME="main Coverage Results" MODIFIED="1525535201494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/kaggle$task.coverage" NAME="task Coverage Results" MODIFIED="1525745478679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/kaggle$model_param_space.coverage" NAME="model_param_space Coverage Results" MODIFIED="1525692939265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/kaggle$main.coverage" NAME="main Coverage Results" MODIFIED="1525745497795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/kaggle$ensemble_learner.coverage" NAME="ensemble_learner Coverage Results" MODIFIED="1525498722686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/utils" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+            <state relative-caret-position="801">
+              <caret line="176" column="24" lean-forward="true" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
               <folding>
                 <element signature="e#142#151#0" expanded="true" />
-                <element signature="e#746#838#0" expanded="false" />
-                <element signature="e#861#996#0" expanded="false" />
-                <element signature="e#1017#1480#0" expanded="false" />
+                <element signature="e#1274#1738#0" expanded="false" />
+                <element signature="e#1757#6160#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,18 +46,42 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ensemble_learner.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/ensemble_learner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#3169#3530#0" expanded="false" />
+                <element signature="e#3601#3987#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/sklearn/ensemble/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="138" column="36" lean-forward="false" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -68,42 +90,26 @@
       <file leaf-file-name="model_param_space.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="690">
+              <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
               <folding>
                 <element signature="e#144#162#0" expanded="true" />
-                <element signature="e#272#1180#0" expanded="false" />
-                <element signature="e#1207#1343#0" expanded="false" />
-                <element signature="e#1371#1693#0" expanded="false" />
-                <element signature="e#1721#2098#0" expanded="false" />
-                <element signature="e#2125#2502#0" expanded="false" />
-                <element signature="e#2530#2911#0" expanded="false" />
-                <element signature="e#3396#3755#0" expanded="false" />
-                <element signature="e#3770#4131#0" expanded="false" />
-                <element signature="e#4191#4801#0" expanded="false" />
+                <element signature="e#295#429#0" expanded="false" />
+                <element signature="e#458#1166#0" expanded="false" />
+                <element signature="e#1196#1986#0" expanded="false" />
+                <element signature="e#2016#2674#0" expanded="false" />
+                <element signature="e#3117#3547#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ensemble_learner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/ensemble_learner.py">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#277#413#0" expanded="false" />
-                <element signature="e#440#818#0" expanded="false" />
-                <element signature="e#847#1755#0" expanded="false" />
-                <element signature="e#2095#3503#0" expanded="false" />
-                <element signature="e#3518#3879#0" expanded="false" />
-                <element signature="e#3949#4335#0" expanded="false" />
-                <element signature="e#4365#5780#0" expanded="false" />
-                <element signature="e#4531#4923#0" expanded="false" />
-                <element signature="e#4959#5343#0" expanded="false" />
-                <element signature="e#5385#5780#0" expanded="false" />
-              </folding>
+              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,6 +137,7 @@
       <find>_build_space</find>
       <find>param_space</find>
       <find>predict_proba</find>
+      <find>roc_auc_score</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,13 +162,15 @@
         <option value="$PROJECT_DIR$/src/README.md" />
         <option value="$PROJECT_DIR$/test/wf.csv" />
         <option value="$PROJECT_DIR$/src/utils/time_utils.py" />
+        <option value="$PROJECT_DIR$/data/output/README.md" />
         <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/data/output/README.md" />
-        <option value="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
         <option value="$PROJECT_DIR$/src/model_param_space.py" />
-        <option value="$PROJECT_DIR$/src/task.py" />
+        <option value="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/sklearn/ensemble/base.py" />
+        <option value="$PROJECT_DIR$/data/models_compare.csv" />
+        <option value="$PROJECT_DIR$/src/task.py" />
       </list>
     </option>
   </component>
@@ -171,9 +180,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1080" />
+    <option name="y" value="-823" />
+    <option name="width" value="1080" />
+    <option name="height" value="1845" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -193,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,17 +228,28 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kaggle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kaggle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -248,14 +269,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,6 +286,102 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ensemble_learner" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kaggle" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/py3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kaggle" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="model_param_space" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kaggle" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/model_param_space.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="run_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simple_one" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kaggle" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simple_one/run_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="task" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kaggle" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/task.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -378,6 +487,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -393,110 +510,20 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="ensemble_learner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kaggle" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kaggle" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="run_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simple_one" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kaggle" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simple_one/run_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="task" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kaggle" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/task.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test_hyperopt" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simple_one" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kaggle" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simple_one/test_hyperopt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.run_model" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_hyperopt" />
-      <item index="2" class="java.lang.String" itemvalue="Python.main" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ensemble_learner" />
-      <item index="4" class="java.lang.String" itemvalue="Python.task" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ensemble_learner" />
+      <item index="3" class="java.lang.String" itemvalue="Python.task" />
+      <item index="4" class="java.lang.String" itemvalue="Python.model_param_space" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.main" />
         <item index="1" class="java.lang.String" itemvalue="Python.task" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ensemble_learner" />
-        <item index="3" class="java.lang.String" itemvalue="Python.run_model" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_hyperopt" />
+        <item index="2" class="java.lang.String" itemvalue="Python.model_param_space" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ensemble_learner" />
+        <item index="4" class="java.lang.String" itemvalue="Python.run_model" />
       </list>
     </recent_temporary>
   </component>
@@ -526,32 +553,55 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1080" y="-823" width="1080" height="1845" extended-state="0" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1509434" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.505571" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38573155" sideWeight="0.49442896" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59344894" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="0" width="129" height="700" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39714286" sideWeight="0.49442896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23603083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44123313" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="0" width="129" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1509434" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.505571" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59344894" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="0" y="0" width="129" height="700" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38568258" sideWeight="0.49442896" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22736031" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -577,16 +627,6 @@
           <line>153</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/utils/ensemble_learner.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/task.py</url>
-          <line>135</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -595,257 +635,22 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="e#144#162#0" expanded="true" />
-            <element signature="e#272#1180#0" expanded="false" />
-            <element signature="e#1207#1343#0" expanded="false" />
-            <element signature="e#1371#1693#0" expanded="false" />
-            <element signature="e#1721#2098#0" expanded="false" />
-            <element signature="e#2125#2502#0" expanded="false" />
-            <element signature="e#2530#2911#0" expanded="false" />
-            <element signature="e#3396#3755#0" expanded="false" />
-            <element signature="e#3770#4131#0" expanded="false" />
-            <element signature="e#4191#4801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3390">
-          <caret line="273" column="62" lean-forward="false" selection-start-line="273" selection-start-column="44" selection-end-line="273" selection-end-column="62" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#746#838#0" expanded="false" />
-            <element signature="e#861#996#0" expanded="false" />
-            <element signature="e#1017#1480#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/test_hyperopt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/run_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="145" column="97" lean-forward="false" selection-start-line="145" selection-start-column="88" selection-end-line="145" selection-end-column="97" />
-          <folding>
-            <element signature="e#489#498#0" expanded="false" />
-            <element signature="e#5735#6318#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/feature_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding>
-            <element signature="e#144#162#0" expanded="true" />
-            <element signature="e#272#1180#0" expanded="false" />
-            <element signature="e#1207#1343#0" expanded="false" />
-            <element signature="e#1371#1693#0" expanded="false" />
-            <element signature="e#1721#2098#0" expanded="false" />
-            <element signature="e#2125#2502#0" expanded="false" />
-            <element signature="e#2530#2911#0" expanded="false" />
-            <element signature="e#3396#3755#0" expanded="false" />
-            <element signature="e#3770#4131#0" expanded="false" />
-            <element signature="e#4191#4801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/feature_basic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="218" column="53" lean-forward="false" selection-start-line="214" selection-start-column="4" selection-end-line="218" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3390">
-          <caret line="273" column="62" lean-forward="false" selection-start-line="273" selection-start-column="44" selection-end-line="273" selection-end-column="62" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#746#838#0" expanded="false" />
-            <element signature="e#861#996#0" expanded="false" />
-            <element signature="e#1017#1480#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/test_hyperopt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding>
-            <element signature="e#144#162#0" expanded="true" />
-            <element signature="e#272#1180#0" expanded="false" />
-            <element signature="e#1207#1343#0" expanded="false" />
-            <element signature="e#1371#1693#0" expanded="false" />
-            <element signature="e#1721#2098#0" expanded="false" />
-            <element signature="e#2125#2502#0" expanded="false" />
-            <element signature="e#2530#2911#0" expanded="false" />
-            <element signature="e#3396#3755#0" expanded="false" />
-            <element signature="e#3770#4131#0" expanded="false" />
-            <element signature="e#4191#4801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/feature_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/feature_basic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/run_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
-          <folding>
-            <element signature="e#489#498#0" expanded="false" />
-            <element signature="e#5735#6318#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#746#838#0" expanded="false" />
-            <element signature="e#861#996#0" expanded="false" />
-            <element signature="e#1017#1480#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#144#162#0" expanded="true" />
-            <element signature="e#272#1180#0" expanded="false" />
-            <element signature="e#1207#1343#0" expanded="false" />
-            <element signature="e#1371#1693#0" expanded="false" />
-            <element signature="e#1721#2098#0" expanded="false" />
-            <element signature="e#2125#2502#0" expanded="false" />
-            <element signature="e#2530#2911#0" expanded="false" />
-            <element signature="e#3396#3755#0" expanded="false" />
-            <element signature="e#3770#4131#0" expanded="false" />
-            <element signature="e#4191#4801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/pkl_util.py" />
-    <entry file="file://$PROJECT_DIR$/src/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#746#838#0" expanded="false" />
-            <element signature="e#861#996#0" expanded="false" />
-            <element signature="e#1017#1480#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
           <folding>
             <element signature="e#144#162#0" expanded="true" />
-            <element signature="e#272#1180#0" expanded="false" />
-            <element signature="e#1207#1343#0" expanded="false" />
-            <element signature="e#1371#1693#0" expanded="false" />
-            <element signature="e#1721#2098#0" expanded="false" />
-            <element signature="e#2125#2502#0" expanded="false" />
-            <element signature="e#2530#2911#0" expanded="false" />
-            <element signature="e#3396#3755#0" expanded="false" />
-            <element signature="e#3770#4131#0" expanded="false" />
-            <element signature="e#4191#4801#0" expanded="false" />
+            <element signature="e#295#429#0" expanded="false" />
+            <element signature="e#458#1166#0" expanded="false" />
+            <element signature="e#1196#1986#0" expanded="false" />
+            <element signature="e#2016#2674#0" expanded="false" />
+            <element signature="e#3117#3547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -856,9 +661,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#746#838#0" expanded="false" />
-            <element signature="e#861#996#0" expanded="false" />
-            <element signature="e#1017#1480#0" expanded="false" />
+            <element signature="e#1274#1738#0" expanded="false" />
+            <element signature="e#1757#6160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -885,84 +689,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/run_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1535">
-          <caret line="145" column="97" lean-forward="false" selection-start-line="145" selection-start-column="88" selection-end-line="145" selection-end-column="97" />
-          <folding>
-            <element signature="e#489#498#0" expanded="false" />
-            <element signature="e#5735#6318#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/test_hyperopt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_one/run_model.py" />
+    <entry file="file://$PROJECT_DIR$/simple_one/test_hyperopt.py" />
     <entry file="file://$PROJECT_DIR$/src/utils/logging_utils.py" />
-    <entry file="file://$PROJECT_DIR$/src/feature_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/feature_basic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_preparer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splitter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1439">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/feature_base.py" />
+    <entry file="file://$PROJECT_DIR$/src/feature_basic.py" />
+    <entry file="file://$PROJECT_DIR$/src/data_processor.py" />
+    <entry file="file://$PROJECT_DIR$/src/data_preparer.py" />
+    <entry file="file://$PROJECT_DIR$/src/splitter.py" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-1199943127/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/test/wf.csv" />
     <entry file="file://$PROJECT_DIR$/src/utils/time_utils.py" />
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_log.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -973,87 +715,267 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/model_param_space.py">
+    <entry file="file://$PROJECT_DIR$/simple_one/model_param_space.py" />
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-07-12-07.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="205" column="20" lean-forward="true" selection-start-line="205" selection-start-column="20" selection-end-line="205" selection-end-column="20" />
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
+        <state relative-caret-position="950">
+          <caret line="1667" column="0" lean-forward="false" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/wf.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-07-20-28.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_lgb_tree_2018-05-07-19-47.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2098">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_lgbm_tree_2018-05-07-19-46.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-08-11-02.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-08-11-40.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-08-14-26.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3958">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-10-20.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-10-22.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding>
+            <element signature="e#144#162#0" expanded="true" />
+            <element signature="e#295#429#0" expanded="false" />
+            <element signature="e#458#1166#0" expanded="false" />
+            <element signature="e#1196#1986#0" expanded="false" />
+            <element signature="e#2016#2674#0" expanded="false" />
+            <element signature="e#3117#3547#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/sklearn/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="541" column="6" lean-forward="false" selection-start-line="541" selection-start-column="6" selection-end-line="541" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-11-06.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7983">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_xgb_tree_2018-05-08-14-28.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6104">
+          <caret line="722" column="7" lean-forward="false" selection-start-line="722" selection-start-column="0" selection-end-line="723" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/sklearn/ensemble/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="138" column="36" lean-forward="false" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-13-49.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-01.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-00.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/ensemble_learner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#277#413#0" expanded="false" />
-            <element signature="e#440#818#0" expanded="false" />
-            <element signature="e#847#1755#0" expanded="false" />
-            <element signature="e#2095#3503#0" expanded="false" />
-            <element signature="e#3518#3879#0" expanded="false" />
-            <element signature="e#3949#4335#0" expanded="false" />
-            <element signature="e#4365#5780#0" expanded="false" />
-            <element signature="e#4531#4923#0" expanded="false" />
-            <element signature="e#4959#5343#0" expanded="false" />
-            <element signature="e#5385#5780#0" expanded="false" />
+            <element signature="e#3169#3530#0" expanded="false" />
+            <element signature="e#3601#3987#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_train_2018-05-09-14-31_Learner@EnsembleLearner_Id@1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-22.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-15-08.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6745">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models_compare.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+        <state relative-caret-position="801">
+          <caret line="176" column="24" lean-forward="true" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
           <folding>
             <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#746#838#0" expanded="false" />
-            <element signature="e#861#996#0" expanded="false" />
-            <element signature="e#1017#1480#0" expanded="false" />
+            <element signature="e#1274#1738#0" expanded="false" />
+            <element signature="e#1757#6160#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#144#162#0" expanded="true" />
-            <element signature="e#272#1180#0" expanded="false" />
-            <element signature="e#1207#1343#0" expanded="false" />
-            <element signature="e#1371#1693#0" expanded="false" />
-            <element signature="e#1721#2098#0" expanded="false" />
-            <element signature="e#2125#2502#0" expanded="false" />
-            <element signature="e#2530#2911#0" expanded="false" />
-            <element signature="e#3396#3755#0" expanded="false" />
-            <element signature="e#3770#4131#0" expanded="false" />
-            <element signature="e#4191#4801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

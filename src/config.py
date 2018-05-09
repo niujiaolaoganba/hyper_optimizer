@@ -11,3 +11,7 @@
 ROOT_DIR = '../'
 OUTPUT_DIR = "%s/data/output"%ROOT_DIR
 LOG_DIR = "%s/log"%ROOT_DIR
+MODEL_COMPARE = "%s/data/models_compare.csv"%ROOT_DIR
+
+
+THREAD = 8
