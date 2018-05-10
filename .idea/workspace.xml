@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/catboost_info/catboost_training.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/catboost_info/learn/events.out.tfevents" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/catboost_info/learn_error.tsv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/catboost_info/meta.tsv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/catboost_info/time_left.tsv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" afterPath="$PROJECT_DIR$/src/config.py" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
-      <change beforePath="$PROJECT_DIR$/src/model_param_space.py" afterPath="$PROJECT_DIR$/src/model_param_space.py" />
       <change beforePath="$PROJECT_DIR$/src/task.py" afterPath="$PROJECT_DIR$/src/task.py" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ensemble_learner.py" afterPath="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,13 +23,12 @@
       <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="413">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#142#151#0" expanded="true" />
-                <element signature="e#1789#6192#0" expanded="false" />
-                <element signature="e#6220#10278#0" expanded="false" />
-                <element signature="e#6601#8183#0" expanded="false" />
+                <element signature="e#1274#1738#0" expanded="false" />
+                <element signature="e#1757#6160#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -49,8 +37,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="81" />
               <folding>
                 <element signature="e#46#65#0" expanded="true" />
               </folding>
@@ -584,19 +572,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#1789#6192#0" expanded="false" />
-            <element signature="e#6220#10278#0" expanded="false" />
-            <element signature="e#6601#8183#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/np_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
@@ -893,16 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -911,15 +876,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="81" />
+          <folding>
+            <element signature="e#46#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="413">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#142#151#0" expanded="true" />
-            <element signature="e#1789#6192#0" expanded="false" />
-            <element signature="e#6220#10278#0" expanded="false" />
-            <element signature="e#6601#8183#0" expanded="false" />
+            <element signature="e#1274#1738#0" expanded="false" />
+            <element signature="e#1757#6160#0" expanded="false" />
           </folding>
         </state>
       </provider>

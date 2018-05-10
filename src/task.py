@@ -28,8 +28,7 @@ from utils import logging_utils, time_utils
 from utils.ensemble_learner import EnsembleLearner
 
 learner_space = {
-    # "single": ["clf_skl_lr", "clf_xgb_tree", "clf_skl_rf","clf_lgb_tree", "clf_cbst_tree", "ensemble",],
-    "single": ["ensemble", ],
+    "single": ["clf_skl_lr", "clf_xgb_tree", "clf_skl_rf","clf_lgb_tree", "clf_cbst_tree", "ensemble",],
     "stacking": ["ensemble", ],
 }
 
@@ -193,8 +192,8 @@ class TaskOptimizer:
             self.task = Task(learner, self.X_train, self.y_train, self.X_test, self.y_test, self.n_iter,
                              prefix, suffix, self.logger, self.verbose)
         elif task_mode == "stacking":
-            train_fnames = glob.iglob("%s/stacking_train*.csv" % config.OUTPUT_DIR)
-            test_fnames = glob.iglob("%s/stacking_test*.csv" % config.OUTPUT_DIR)
+            train_fnames = glob.iglob("%s/train_single*.csv" % config.OUTPUT_DIR)
+            test_fnames = glob.iglob("%s/test_single*.csv" % config.OUTPUT_DIR)
             stacking_level1_train = pd.concat([pd.read_csv(f) for f in train_fnames], axis=1)
             stacking_level1_test = pd.concat([pd.read_csv(f) for f in test_fnames], axis = 1)
             stacking_level1_test = stacking_level1_test[stacking_level1_train.columns]
@@ -216,6 +215,9 @@ class TaskOptimizer:
         line_index = 1
         self.param_space = ModelParamSpace()
         for task_mode in ("single","stacking",):
+            if task_mode not in learner_space:
+                print('%s model missed' % task_mode)
+                continue
             print('start %s model task' % task_mode)
             for learner in learner_space[task_mode]:
                 print('optimizing %s' % learner)
