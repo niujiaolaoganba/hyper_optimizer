@@ -28,7 +28,8 @@ from utils import logging_utils, time_utils
 from utils.ensemble_learner import EnsembleLearner
 
 learner_space = {
-    "single": ["clf_skl_lr", "clf_xgb_tree", "clf_skl_rf","clf_lgb_tree", "clf_cbst_tree", "ensemble",],
+    # "single": ["clf_skl_lr", "clf_xgb_tree", "clf_skl_rf","clf_lgb_tree", "clf_cbst_tree", "ensemble",],
+    "single": ["ensemble", ],
     "stacking": ["ensemble", ],
 }
 

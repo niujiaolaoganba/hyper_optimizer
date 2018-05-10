@@ -99,11 +99,11 @@ param_space_dict = {
 }
 
 int_params = [
-    "num_round", "n_estimators", "min_samples_split", "min_samples_leaf",
+    "num_round", "n_estimators", "min_samples_split", "min_samples_leaf",'min_data_in_leaf',
     "n_neighbors", "leaf_size", "seed", "random_state", "max_depth", "degree",
     "hidden_units", "hidden_layers", "batch_size", "nb_epoch", "dim", "iter",
     "factor", "iteration", "n_jobs", "max_leaf_forest", "num_iteration_opt",
-    "num_tree_search", "min_pop", "opt_interval", 'min_data_in_leaf', 'num_leaves'
+    "num_tree_search", "min_pop", "opt_interval", 'min_data_in_leaf', 'num_leaves','min_child_samples'
 ]
 int_params = set(int_params)
 

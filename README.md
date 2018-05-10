@@ -5,3 +5,9 @@
 
 项目适解决feature engineering之后模型调参、多模型对比、模型bagging，模型stacking的工作。
 
+requires
+sklearn
+xgboost
+lightgbm
+catboost
+hyperopt

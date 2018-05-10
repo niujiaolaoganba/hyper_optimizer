@@ -61,17 +61,14 @@ param_space_ensemble = {
 
     # # 2. optimizing weights
         "clf_skl_lr": {
-            "learner": LogisticRegression(),
             "param": param_space_clf_skl_lr,
             "weight": hp.quniform("clf_skl_lr__weight", 1.0, 1.0, 0.1),  # fix this one
         },
         "clf_xgb_tree": {
-            "learner": XGBClassifier(),
             "param": param_space_clf_xgb_tree,
             "weight": hp.quniform("reg_xgb_tree__weight", 0.0, 1.0, 0.1),
         },
         "clf_skl_rf": {
-            "learner": RandomForestClassifier(),
             "param": param_space_clf_skl_rf,
             "weight": hp.quniform("reg_skl_rf__weight", 0.0, 1.0, 0.1),
         },
@@ -86,6 +83,11 @@ int_params = [
 ]
 int_params = set(int_params)
 
+learner_name_space = {
+    "clf_skl_lr": LogisticRegression,
+    "clf_xgb_tree": XGBClassifier,
+    "clf_skl_rf": RandomForestClassifier,
+}
 
 def convert_int_param(param_dict):
     if isinstance(param_dict, dict):
@@ -110,8 +112,7 @@ class EnsembleLearner:
     def fit(self, X, y):
         for learner_name in self.param_dict.keys():
             p = convert_int_param(self.param_dict[learner_name]["param"])
-            l = self.param_dict[learner_name]["learner"]
-            l.set_params(**p)
+            l = learner_name_space[learner_name](**p)
             if l is not None:
                 self.param_dict[learner_name]["learner"] = l.fit(X, y)
             else:
