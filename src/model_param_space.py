@@ -77,7 +77,6 @@ param_space_clf_skl_rf = {
     "verbose": 0,
 }
 
-
 param_space_clf_skl_adaboost = {
     "base_estimator": hp.choice("base_estimator", ["dtr", "etr"]),
     "n_estimators": hp.quniform("n_estimators", 10, 1000, 10),

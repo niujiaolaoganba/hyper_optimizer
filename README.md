@@ -5,7 +5,8 @@
 
 项目适解决feature engineering之后模型调参、多模型对比、模型bagging，模型stacking的工作。
 
-requires
+requirement
+networkx=1.11
 sklearn
 xgboost
 lightgbm

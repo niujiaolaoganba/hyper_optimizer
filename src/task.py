@@ -32,15 +32,12 @@ learner_space = {
     "stacking": ["ensemble", ],
 }
 
-learner_name_space = {
-    "clf_skl_lr": LogisticRegression,
-    "clf_xgb_tree": XGBClassifier,
-    "clf_skl_rf": RandomForestClassifier,
-    "ensemble": EnsembleLearner,
-    "clf_lgb_tree": LGBMClassifier,
-    "clf_cbst_tree": CatBoostClassifier,
-}
-
+learner_name_space = {'clf_skl_lr': LogisticRegression,
+                      'clf_xgb_tree': XGBClassifier,
+                      'clf_skl_rf': RandomForestClassifier,
+                      'ensemble': EnsembleLearner,
+                      'clf_lgb_tree': LGBMClassifier,
+                      'clf_cbst_tree': CatBoostClassifier}
 
 class Learner:
     def __init__(self, learner_name, param_dict):
