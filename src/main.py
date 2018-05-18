@@ -14,13 +14,13 @@ tag_vec = CountVectorizer(tokenizer=lambda x: x.split(','))
 tag_vec.fit(train.tags)
 
 X_train = pd.DataFrame(tag_vec.transform(train.tags).toarray(), columns = tag_vec.get_feature_names())
-y_train = train.is_apply
+y_train = train.is_reg
 X_test= pd.DataFrame(tag_vec.transform(test.tags).toarray(), columns = tag_vec.get_feature_names())
-y_test = test.is_apply
+# y_test = test.is_reg
 
 
 #跑任务
-optimizer = TaskOptimizer(X_train, y_train, X_test, y_test, cv = 3, max_evals = 9, verbose=True)
+optimizer = TaskOptimizer(X_train, y_train, X_test, y_test = None, cv = 2, max_evals = 2, verbose=True)
 optimizer.run()
 
 

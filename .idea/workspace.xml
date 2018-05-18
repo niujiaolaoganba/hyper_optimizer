@@ -2,212 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9377b25a-19dd-4703-829d-4e135a69d834" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@1_[auc0.500000].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@2_[auc0.793983].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@3_[auc0.500000].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@4_[auc0.754207].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@5_[auc0.792982].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@6_[auc0.343598].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-28_Learner@clf_skl_lr_Id@7_[auc0.795195].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-28_Learner@clf_skl_lr_Id@8_[auc0.500000].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-28_Learner@clf_skl_lr_Id@9_[auc0.485732].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-14-49_Learner@clf_xgb_tree_Id@10_[auc0.797512].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-15-05_Learner@clf_xgb_tree_Id@11_[auc0.793473].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-15-22_Learner@clf_xgb_tree_Id@12_[auc0.798552].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-15-34_Learner@clf_xgb_tree_Id@13_[auc0.797737].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-16-10_Learner@clf_xgb_tree_Id@14_[auc0.793734].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-16-13_Learner@clf_xgb_tree_Id@15_[auc0.787853].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-16-29_Learner@clf_xgb_tree_Id@16_[auc0.799047].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-16-35_Learner@clf_xgb_tree_Id@17_[auc0.785081].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-16-50_Learner@clf_xgb_tree_Id@18_[auc0.799046].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-16_Learner@clf_skl_rf_Id@1_[auc0.784406].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-20_Learner@clf_skl_rf_Id@2_[auc0.789958].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-20_Learner@clf_skl_rf_Id@3_[auc0.717009].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-31_Learner@clf_skl_rf_Id@4_[auc0.789304].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-40_Learner@clf_skl_rf_Id@5_[auc0.784006].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-44_Learner@clf_skl_rf_Id@6_[auc0.785330].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-51_Learner@clf_skl_rf_Id@7_[auc0.788749].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-17-58_Learner@clf_skl_rf_Id@8_[auc0.767859].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-13_Learner@clf_lgb_tree_Id@10_[auc0.792327].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-13_Learner@clf_skl_rf_Id@9_[auc0.789361].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-14_Learner@clf_lgb_tree_Id@11_[auc0.793591].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-15_Learner@clf_lgb_tree_Id@12_[auc0.785993].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-17_Learner@clf_lgb_tree_Id@13_[auc0.779051].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-18_Learner@clf_lgb_tree_Id@14_[auc0.797614].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-18_Learner@clf_lgb_tree_Id@15_[auc0.750133].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-19_Learner@clf_lgb_tree_Id@16_[auc0.790577].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-21_Learner@clf_lgb_tree_Id@17_[auc0.791885].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-26_Learner@clf_lgb_tree_Id@18_[auc0.795239].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-39_Learner@clf_cbst_tree_Id@19_[auc0.741096].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-18-51_Learner@clf_cbst_tree_Id@20_[auc0.710160].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-19-05_Learner@clf_cbst_tree_Id@21_[auc0.715234].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-19-17_Learner@clf_cbst_tree_Id@22_[auc0.787501].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-19-28_Learner@clf_cbst_tree_Id@23_[auc0.771192].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-19-39_Learner@clf_cbst_tree_Id@24_[auc0.736566].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-19-50_Learner@clf_cbst_tree_Id@25_[auc0.773534].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-19-58_Learner@clf_cbst_tree_Id@26_[auc0.798540].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-08-20-08_Learner@clf_cbst_tree_Id@27_[auc0.798028].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-11-48_Learner@EnsembleLearner_Id@1_[auc0.793607].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-12-00_Learner@EnsembleLearner_Id@2_[auc0.799862].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-12-10_Learner@EnsembleLearner_Id@3_[auc0.793638].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-12-22_Learner@EnsembleLearner_Id@4_[auc0.785877].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-12-56_Learner@EnsembleLearner_Id@5_[auc0.796967].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-13-17_Learner@EnsembleLearner_Id@6_[auc0.792746].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-13-23_Learner@EnsembleLearner_Id@7_[auc0.770202].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-13-40_Learner@EnsembleLearner_Id@8_[auc0.793871].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-13-49_Learner@EnsembleLearner_Id@9_[auc0.767487].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-15-20_stacking_Learner@EnsembleLearner_Id@1_[auc0.799493].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-15-34_stacking_Learner@EnsembleLearner_Id@2_[auc0.800525].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-15-43_stacking_Learner@EnsembleLearner_Id@3_[auc0.799871].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-15-54_stacking_Learner@EnsembleLearner_Id@4_[auc0.798947].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-16-15_stacking_Learner@EnsembleLearner_Id@5_[auc0.796772].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-16-24_stacking_Learner@EnsembleLearner_Id@6_[auc0.799619].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-16-43_stacking_Learner@EnsembleLearner_Id@7_[auc0.799519].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-16-52_stacking_Learner@EnsembleLearner_Id@8_[auc0.800885].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-09-17-03_stacking_Learner@EnsembleLearner_Id@9_[auc0.800880].csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-27_Learner@clf_skl_lr_Id@7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-28_Learner@clf_skl_lr_Id@8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-28_Learner@clf_skl_lr_Id@9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-42_Learner@clf_xgb_tree_Id@10.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-15-00_Learner@clf_xgb_tree_Id@11.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-15-16_Learner@clf_xgb_tree_Id@12.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-15-30_Learner@clf_xgb_tree_Id@13.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-15-58_Learner@clf_xgb_tree_Id@14.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-16-12_Learner@clf_xgb_tree_Id@15.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-16-24_Learner@clf_xgb_tree_Id@16.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-16-33_Learner@clf_xgb_tree_Id@17.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-16-45_Learner@clf_xgb_tree_Id@18.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-13_Learner@clf_skl_rf_Id@1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-19_Learner@clf_skl_rf_Id@2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-20_Learner@clf_skl_rf_Id@3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-27_Learner@clf_skl_rf_Id@4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-37_Learner@clf_skl_rf_Id@5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-43_Learner@clf_skl_rf_Id@6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-48_Learner@clf_skl_rf_Id@7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-17-55_Learner@clf_skl_rf_Id@8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-07_Learner@clf_skl_rf_Id@9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-13_Learner@clf_lgb_tree_Id@10.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-14_Learner@clf_lgb_tree_Id@11.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-15_Learner@clf_lgb_tree_Id@12.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-17_Learner@clf_lgb_tree_Id@13.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-18_Learner@clf_lgb_tree_Id@14.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-18_Learner@clf_lgb_tree_Id@15.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-19_Learner@clf_lgb_tree_Id@16.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-20_Learner@clf_lgb_tree_Id@17.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-37_Learner@clf_cbst_tree_Id@19.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-49_Learner@clf_cbst_tree_Id@20.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-19-02_Learner@clf_cbst_tree_Id@21.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-19-14_Learner@clf_cbst_tree_Id@22.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-19-26_Learner@clf_cbst_tree_Id@23.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-19-37_Learner@clf_cbst_tree_Id@24.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-19-48_Learner@clf_cbst_tree_Id@25.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-19-56_Learner@clf_cbst_tree_Id@26.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-08-20-06_Learner@clf_cbst_tree_Id@27.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-11-33_Learner@EnsembleLearner_Id@1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-11-55_Learner@EnsembleLearner_Id@2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-12-06_Learner@EnsembleLearner_Id@3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-12-17_Learner@EnsembleLearner_Id@4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-12-44_Learner@EnsembleLearner_Id@5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-13-09_Learner@EnsembleLearner_Id@6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-13-21_Learner@EnsembleLearner_Id@7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-13-34_Learner@EnsembleLearner_Id@8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_test_2018-05-09-13-46_Learner@EnsembleLearner_Id@9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-26_Learner@clf_skl_lr_Id@1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-26_Learner@clf_skl_lr_Id@2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-26_Learner@clf_skl_lr_Id@3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-27_Learner@clf_skl_lr_Id@4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-27_Learner@clf_skl_lr_Id@5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-27_Learner@clf_skl_lr_Id@6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-27_Learner@clf_skl_lr_Id@7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-28_Learner@clf_skl_lr_Id@8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-28_Learner@clf_skl_lr_Id@9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-14-42_Learner@clf_xgb_tree_Id@10.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-15-00_Learner@clf_xgb_tree_Id@11.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-15-16_Learner@clf_xgb_tree_Id@12.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-15-30_Learner@clf_xgb_tree_Id@13.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-15-58_Learner@clf_xgb_tree_Id@14.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-16-12_Learner@clf_xgb_tree_Id@15.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-16-24_Learner@clf_xgb_tree_Id@16.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-16-33_Learner@clf_xgb_tree_Id@17.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-16-45_Learner@clf_xgb_tree_Id@18.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-13_Learner@clf_skl_rf_Id@1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-19_Learner@clf_skl_rf_Id@2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-20_Learner@clf_skl_rf_Id@3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-27_Learner@clf_skl_rf_Id@4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-37_Learner@clf_skl_rf_Id@5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-43_Learner@clf_skl_rf_Id@6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-48_Learner@clf_skl_rf_Id@7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-17-55_Learner@clf_skl_rf_Id@8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-07_Learner@clf_skl_rf_Id@9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-13_Learner@clf_lgb_tree_Id@10.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-14_Learner@clf_lgb_tree_Id@11.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-15_Learner@clf_lgb_tree_Id@12.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-17_Learner@clf_lgb_tree_Id@13.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-18_Learner@clf_lgb_tree_Id@14.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-18_Learner@clf_lgb_tree_Id@15.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-19_Learner@clf_lgb_tree_Id@16.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-20_Learner@clf_lgb_tree_Id@17.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-37_Learner@clf_cbst_tree_Id@19.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-49_Learner@clf_cbst_tree_Id@20.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-19-02_Learner@clf_cbst_tree_Id@21.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-19-14_Learner@clf_cbst_tree_Id@22.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-19-26_Learner@clf_cbst_tree_Id@23.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-19-37_Learner@clf_cbst_tree_Id@24.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-19-48_Learner@clf_cbst_tree_Id@25.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-19-56_Learner@clf_cbst_tree_Id@26.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-08-20-06_Learner@clf_cbst_tree_Id@27.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-11-33_Learner@EnsembleLearner_Id@1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-11-55_Learner@EnsembleLearner_Id@2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-12-06_Learner@EnsembleLearner_Id@3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-12-17_Learner@EnsembleLearner_Id@4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-12-44_Learner@EnsembleLearner_Id@5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-13-09_Learner@EnsembleLearner_Id@6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-13-21_Learner@EnsembleLearner_Id@7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-13-34_Learner@EnsembleLearner_Id@8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/stacking_train_2018-05-09-13-46_Learner@EnsembleLearner_Id@9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@1_2018-05-09-15-16.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@2_2018-05-09-15-29.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@3_2018-05-09-15-40.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@4_2018-05-09-15-50.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@5_2018-05-09-16-08.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@6_2018-05-09-16-21.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@7_2018-05-09-16-37.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@8_2018-05-09-16-49.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@9_2018-05-09-16-59.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@1_2018-05-09-15-16.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@2_2018-05-09-15-29.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@3_2018-05-09-15-40.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@4_2018-05-09-15-50.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@5_2018-05-09-16-08.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@6_2018-05-09-16-21.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@7_2018-05-09-16-37.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@8_2018-05-09-16-49.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@9_2018-05-09-16-59.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_clf_cbst_tree_2018-05-08-18-26.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_clf_lgb_tree_2018-05-08-18-13.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-08-14-26.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_clf_skl_rf_2018-05-08-17-06.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_clf_xgb_tree_2018-05-08-14-28.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_ensemble_2018-05-09-11-06.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/single_ensemble_2018-05-10-14-58.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-15-08.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/stacking_ensemble_2018-05-10-19-23.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/model_param_space.py" afterPath="$PROJECT_DIR$/src/model_param_space.py" />
+      <change beforePath="$PROJECT_DIR$/data/models_compare.csv" afterPath="$PROJECT_DIR$/data/models_compare.csv" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@1_[auc0.795376].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@2_[auc0.500000].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@3_[auc0.500000].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@4_[auc0.350089].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@5_[auc0.793364].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@6_[auc0.754209].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-18_single_Learner@clf_skl_lr_Id@7_[auc0.794540].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-19_single_Learner@clf_skl_lr_Id@8_[auc0.794741].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-19_single_Learner@clf_skl_lr_Id@9_[auc0.500000].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-22_single_Learner@clf_xgb_tree_Id@10_[auc0.797201].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-24_single_Learner@clf_xgb_tree_Id@11_[auc0.793110].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-24_single_Learner@clf_xgb_tree_Id@12_[auc0.789435].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-25_single_Learner@clf_xgb_tree_Id@13_[auc0.786370].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-30_single_Learner@clf_xgb_tree_Id@14_[auc0.789577].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-32_single_Learner@clf_xgb_tree_Id@15_[auc0.796550].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-35_single_Learner@clf_xgb_tree_Id@16_[auc0.783811].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-36_single_Learner@clf_xgb_tree_Id@17_[auc0.784188].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-37_single_Learner@clf_skl_rf_Id@19_[auc0.759313].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-37_single_Learner@clf_xgb_tree_Id@18_[auc0.792368].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-45_single_Learner@clf_skl_rf_Id@20_[auc0.790170].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-50_single_Learner@clf_skl_rf_Id@21_[auc0.780663].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-53_single_Learner@clf_skl_rf_Id@22_[auc0.791344].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-57_single_Learner@clf_skl_rf_Id@23_[auc0.761627].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-17-58_single_Learner@clf_skl_rf_Id@24_[auc0.791155].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-01_single_Learner@clf_skl_rf_Id@25_[auc0.777083].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-10_single_Learner@clf_skl_rf_Id@26_[auc0.790828].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-13_single_Learner@clf_lgb_tree_Id@28_[auc0.798683].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-13_single_Learner@clf_skl_rf_Id@27_[auc0.789165].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-15_single_Learner@clf_lgb_tree_Id@29_[auc0.785321].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-17_single_Learner@clf_lgb_tree_Id@30_[auc0.793234].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-18_single_Learner@clf_lgb_tree_Id@31_[auc0.792291].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-21_single_Learner@clf_lgb_tree_Id@32_[auc0.799500].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-22_single_Learner@clf_lgb_tree_Id@33_[auc0.786672].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-23_single_Learner@clf_lgb_tree_Id@34_[auc0.799676].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-25_single_Learner@clf_lgb_tree_Id@35_[auc0.798704].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-25_single_Learner@clf_lgb_tree_Id@36_[auc0.758603].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-32_single_Learner@clf_cbst_tree_Id@37_[auc0.798577].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-39_single_Learner@clf_cbst_tree_Id@38_[auc0.798215].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-45_single_Learner@clf_cbst_tree_Id@39_[auc0.776599].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-18-51_single_Learner@clf_cbst_tree_Id@40_[auc0.798222].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-01_single_Learner@clf_cbst_tree_Id@41_[auc0.801389].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-08_single_Learner@clf_cbst_tree_Id@42_[auc0.717767].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-16_single_Learner@clf_cbst_tree_Id@43_[auc0.746576].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-25_single_Learner@clf_cbst_tree_Id@44_[auc0.798340].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-34_single_Learner@clf_cbst_tree_Id@45_[auc0.797945].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-42_single_Learner@EnsembleLearner_Id@46_[auc0.789666].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-48_single_Learner@EnsembleLearner_Id@47_[auc0.798335].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-56_single_Learner@EnsembleLearner_Id@48_[auc0.612374].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-19-59_single_Learner@EnsembleLearner_Id@49_[auc0.784148].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-02_single_Learner@EnsembleLearner_Id@50_[auc0.794940].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-11_single_Learner@EnsembleLearner_Id@51_[auc0.795504].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-21_single_Learner@EnsembleLearner_Id@52_[auc0.715636].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-25_single_Learner@EnsembleLearner_Id@53_[auc0.798252].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-30_single_Learner@EnsembleLearner_Id@54_[auc0.788607].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-33_stacking_Learner@EnsembleLearner_Id@55_[auc0.800859].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-36_stacking_Learner@EnsembleLearner_Id@56_[auc0.795042].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-39_stacking_Learner@EnsembleLearner_Id@57_[auc0.800802].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-43_stacking_Learner@EnsembleLearner_Id@58_[auc0.798893].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-47_stacking_Learner@EnsembleLearner_Id@59_[auc0.800833].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-52_stacking_Learner@EnsembleLearner_Id@60_[auc0.795848].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-20-53_stacking_Learner@EnsembleLearner_Id@61_[auc0.800898].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-21-04_stacking_Learner@EnsembleLearner_Id@62_[auc0.800617].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/refit_test_2018-05-10-21-07_stacking_Learner@EnsembleLearner_Id@63_[auc0.798703].csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@46_2018-05-10-19-40.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@47_2018-05-10-19-46.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@48_2018-05-10-19-53.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@49_2018-05-10-19-58.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@50_2018-05-10-20-01.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@51_2018-05-10-20-07.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@52_2018-05-10-20-17.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@53_2018-05-10-20-24.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@EnsembleLearner_Id@54_2018-05-10-20-28.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@37_2018-05-10-18-31.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@38_2018-05-10-18-37.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@39_2018-05-10-18-43.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@40_2018-05-10-18-50.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@41_2018-05-10-18-58.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@42_2018-05-10-19-07.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@43_2018-05-10-19-15.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@44_2018-05-10-19-23.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_cbst_tree_Id@45_2018-05-10-19-32.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@28_2018-05-10-18-13.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@29_2018-05-10-18-15.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@30_2018-05-10-18-16.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@31_2018-05-10-18-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@32_2018-05-10-18-20.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@33_2018-05-10-18-22.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@34_2018-05-10-18-23.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@35_2018-05-10-18-24.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_lgb_tree_Id@36_2018-05-10-18-25.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@1_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@2_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@3_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@4_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@5_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@6_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@7_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@8_2018-05-10-17-19.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_lr_Id@9_2018-05-10-17-19.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@19_2018-05-10-17-37.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@20_2018-05-10-17-42.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@21_2018-05-10-17-48.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@22_2018-05-10-17-52.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@23_2018-05-10-17-56.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@24_2018-05-10-17-58.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@25_2018-05-10-18-00.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@26_2018-05-10-18-07.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_skl_rf_Id@27_2018-05-10-18-12.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@10_2018-05-10-17-21.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@11_2018-05-10-17-23.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@12_2018-05-10-17-24.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@13_2018-05-10-17-25.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@14_2018-05-10-17-29.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@15_2018-05-10-17-32.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@16_2018-05-10-17-34.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@17_2018-05-10-17-36.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_single_Learner@clf_xgb_tree_Id@18_2018-05-10-17-37.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@55_2018-05-10-20-32.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@56_2018-05-10-20-35.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@57_2018-05-10-20-38.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@58_2018-05-10-20-42.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@59_2018-05-10-20-46.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@60_2018-05-10-20-50.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@61_2018-05-10-20-53.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@62_2018-05-10-21-00.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/test_stacking_Learner@EnsembleLearner_Id@63_2018-05-10-21-06.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@46_2018-05-10-19-40.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@47_2018-05-10-19-46.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@48_2018-05-10-19-53.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@49_2018-05-10-19-58.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@50_2018-05-10-20-01.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@51_2018-05-10-20-07.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@52_2018-05-10-20-17.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@53_2018-05-10-20-24.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@EnsembleLearner_Id@54_2018-05-10-20-28.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@37_2018-05-10-18-31.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@38_2018-05-10-18-37.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@39_2018-05-10-18-43.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@40_2018-05-10-18-50.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@41_2018-05-10-18-58.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@42_2018-05-10-19-07.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@43_2018-05-10-19-15.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@44_2018-05-10-19-23.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_cbst_tree_Id@45_2018-05-10-19-32.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@28_2018-05-10-18-13.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@29_2018-05-10-18-15.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@30_2018-05-10-18-16.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@31_2018-05-10-18-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@32_2018-05-10-18-20.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@33_2018-05-10-18-22.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@34_2018-05-10-18-23.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@35_2018-05-10-18-24.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_lgb_tree_Id@36_2018-05-10-18-25.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@1_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@2_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@3_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@4_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@5_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@6_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@7_2018-05-10-17-18.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@8_2018-05-10-17-19.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_lr_Id@9_2018-05-10-17-19.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@19_2018-05-10-17-37.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@20_2018-05-10-17-42.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@21_2018-05-10-17-48.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@22_2018-05-10-17-52.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@23_2018-05-10-17-56.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@24_2018-05-10-17-58.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@25_2018-05-10-18-00.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@26_2018-05-10-18-07.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_skl_rf_Id@27_2018-05-10-18-12.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@10_2018-05-10-17-21.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@11_2018-05-10-17-23.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@12_2018-05-10-17-24.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@13_2018-05-10-17-25.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@14_2018-05-10-17-29.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@15_2018-05-10-17-32.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@16_2018-05-10-17-34.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@17_2018-05-10-17-36.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_single_Learner@clf_xgb_tree_Id@18_2018-05-10-17-37.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@55_2018-05-10-20-32.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@56_2018-05-10-20-35.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@57_2018-05-10-20-38.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@58_2018-05-10-20-42.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@59_2018-05-10-20-46.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@60_2018-05-10-20-50.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@61_2018-05-10-20-53.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@62_2018-05-10-21-00.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/output/train_stacking_Learner@EnsembleLearner_Id@63_2018-05-10-21-06.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/single_clf_cbst_tree_2018-05-10-18-25.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/single_clf_lgb_tree_2018-05-10-18-13.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-10-17-17.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/single_clf_skl_rf_2018-05-10-17-37.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/single_clf_xgb_tree_2018-05-10-17-19.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/single_ensemble_2018-05-10-19-34.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/stacking_ensemble_2018-05-10-20-30.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change beforePath="$PROJECT_DIR$/src/task.py" afterPath="$PROJECT_DIR$/src/task.py" />
-      <change beforePath="$PROJECT_DIR$/src/utils/np_utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/utils/pkl_util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/utils/skl_utils.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -219,31 +212,31 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kaggle$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1519464927089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simple_one" />
     <SUITE FILE_PATH="coverage/kaggle$task.coverage" NAME="task Coverage Results" MODIFIED="1525745478679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/hyper_optimizer$main.coverage" NAME="main Coverage Results" MODIFIED="1526639003624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/kaggle$model_param_space.coverage" NAME="model_param_space Coverage Results" MODIFIED="1525692939265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/kaggle$main.coverage" NAME="main Coverage Results" MODIFIED="1525745497795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/kaggle$ensemble_learner.coverage" NAME="ensemble_learner Coverage Results" MODIFIED="1525498722686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/utils" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="task.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="-1163">
+              <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="41" />
               <folding>
                 <element signature="e#142#151#0" expanded="true" />
                 <element signature="e#1356#1820#0" expanded="false" />
-                <element signature="e#8258#10449#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="15" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="23" selection-end-column="15" />
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#46#65#0" expanded="true" />
               </folding>
@@ -255,7 +248,7 @@
         <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="990">
-              <caret line="126" column="25" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="126" selection-end-column="25" />
+              <caret line="126" column="25" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="126" selection-end-column="25" />
               <folding>
                 <element signature="e#144#162#0" expanded="true" />
                 <element signature="e#458#1166#0" expanded="false" />
@@ -272,7 +265,7 @@
       <file leaf-file-name="ensemble_learner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/ensemble_learner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="555">
               <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="e#3035#3396#0" expanded="false" />
@@ -334,12 +327,12 @@
         <option value="$PROJECT_DIR$/data/output/README.md" />
         <option value="$PROJECT_DIR$/data/models_compare.csv" />
         <option value="$PROJECT_DIR$/src/config.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/utils/ensemble_learner.py" />
         <option value="$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/sklearn/ensemble/base.py" />
-        <option value="$PROJECT_DIR$/src/task.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/model_param_space.py" />
+        <option value="$PROJECT_DIR$/src/task.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -373,35 +366,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="kaggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
+              <item name="hyper_optimizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hyper_optimizer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="kaggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
+              <item name="hyper_optimizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hyper_optimizer" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -721,19 +703,19 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23603083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23988439" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39848402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -786,11 +768,6 @@
           <line>153</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/task.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -804,16 +781,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/pkl_util.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydev_run_in_console.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_one/run_model.py" />
-    <entry file="file://$PROJECT_DIR$/simple_one/test_hyperopt.py" />
     <entry file="file://$PROJECT_DIR$/src/utils/logging_utils.py" />
     <entry file="file://$PROJECT_DIR$/src/feature_base.py" />
     <entry file="file://$PROJECT_DIR$/src/feature_basic.py" />
@@ -827,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,19 +805,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple_one/model_param_space.py" />
-    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-07-12-07.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-07-12-07.log" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="1667" column="0" lean-forward="false" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,175 +817,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-07-20-28.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_clf_lgb_tree_2018-05-07-19-47.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2098">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_clf_lgbm_tree_2018-05-07-19-46.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-08-11-02.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-08-11-40.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-10-20.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-10-22.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-07-20-28.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_clf_lgb_tree_2018-05-07-19-47.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_clf_lgbm_tree_2018-05-07-19-46.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-08-11-02.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-08-11-40.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-10-20.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-10-22.log" />
     <entry file="file://$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/sklearn/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="541" column="6" lean-forward="false" selection-start-line="541" selection-start-column="6" selection-end-line="541" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-11-06.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7983">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_clf_xgb_tree_2018-05-08-14-28.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6104">
-          <caret line="722" column="7" lean-forward="false" selection-start-line="722" selection-start-column="0" selection-end-line="723" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-13-49.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-01.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-00.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/stacking_train_2018-05-09-14-31_Learner@EnsembleLearner_Id@1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-22.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-15-08.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6745">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/models_compare.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-08-14-26.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-09-11-06.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_clf_xgb_tree_2018-05-08-14-28.log" />
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-13-49.log" />
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-01.log" />
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-00.log" />
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_train_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv" />
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_test_2018-05-08-18-24_Learner@clf_lgb_tree_Id@18.csv" />
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_train_2018-05-09-14-31_Learner@EnsembleLearner_Id@1.csv" />
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-14-22.log" />
+    <entry file="file://$PROJECT_DIR$/log/stacking_ensemble_2018-05-09-15-08.log" />
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-08-14-26.log" />
     <entry file="file://$PROJECT_DIR$/src/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,42 +856,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
           <caret line="138" column="35" lean-forward="false" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-10-14-58.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/skl_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="163" column="42" lean-forward="false" selection-start-line="163" selection-start-column="24" selection-end-line="163" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/np_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_ensemble_2018-05-10-14-58.log" />
+    <entry file="file://$PROJECT_DIR$/data/output/stacking_test_2018-05-08-14-26_Learner@clf_skl_lr_Id@1.csv" />
+    <entry file="file://$PROJECT_DIR$/src/utils/skl_utils.py" />
+    <entry file="file://$PROJECT_DIR$/src/utils/np_utils.py" />
     <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1081,7 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/ensemble_learner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="555">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="e#3035#3396#0" expanded="false" />
@@ -1095,24 +887,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="23" selection-end-column="15" />
-          <folding>
-            <element signature="e#46#65#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model_param_space.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
-          <caret line="126" column="25" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="126" selection-end-column="25" />
+          <caret line="126" column="25" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="126" selection-end-column="25" />
           <folding>
             <element signature="e#144#162#0" expanded="true" />
             <element signature="e#458#1166#0" expanded="false" />
@@ -1125,14 +906,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-18-18-23.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_rf_2018-05-18-18-52.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_skl_lr_2018-05-18-18-52.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/single_clf_lgb_tree_2018-05-18-18-53.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="-1163">
+          <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="41" />
           <folding>
             <element signature="e#142#151#0" expanded="true" />
             <element signature="e#1356#1820#0" expanded="false" />
-            <element signature="e#8258#10449#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models_compare.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#65#0" expanded="true" />
           </folding>
         </state>
       </provider>

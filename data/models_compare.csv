@@ -1,39 +1,4 @@
-task_mode   learner   test_auc   train_auc   best_time   best_params 
-single   clf_skl_lr   0.7952   0.7992   14 secs   {'C': 0.42887267446805283, 'penalty': 'l1', 'random_state': 42} 
-single   clf_xgb_tree   0.7990   0.8684   5 mins   {'colsample_bylevel': 0.6646669042004119, 'colsample_bytree': 0.8008239586649852, 'gamma': 0.0015189341471976586, 'learning_rate': 0.03, 'max_depth': 8, 'min_child_weight': 3.487293253615493e-07, 'n_estimators': 380, 'nthread': 8, 'reg_alpha': 9.174279781272688e-07, 'reg_lambda': 7.865805487578934, 'seed': 42, 'subsample': 0.7328079157923393} 
-single   clf_skl_rf   0.7900   0.8235   1 mins   {'max_depth': 9, 'max_features': 0.75, 'min_samples_leaf': 6, 'min_samples_split': 10, 'n_estimators': 160, 'n_jobs': 8, 'random_state': 42, 'verbose': 0}
-single   clf_lgb_tree   0.7976   0.8178   17 secs   {'boosting_type': 'gbdt', 'colsample_bytree': 0.9500000000000001, 'learning_rate': 0.036000000000000004, 'max_depth': 7, 'metric': 'auc', 'min_data_in_leaf': 4, 'min_sum_hessian_in_leaf': 142.4470697001506, 'n_estimators': 830, 'n_jobs': 8, 'num_leaves': 704, 'objective': 'binary', 'random_state': 42, 'reg_alpha': 7.22382327620257, 'reg_lambda': 1.9431973280052583e-07, 'subsample': 0.8, 'verbose': -1} 
-single   clf_cbst_tree   0.7985   0.8212   1 mins   {'bagging_temperature': 0.09808263389250738, 'border_count': 128, 'depth': 5.0, 'l2_leaf_reg': 7.3993922545778945, 'learning_rate': 0.026618697817050858, 'one_hot_max_size': 0, 'random_state': 42, 'random_strength': 1, 'simple_ctr': ('Borders', 'BinarizedTargetMeanValue', 'Counter'), 'thread_count': 8, 'used_ram_limit': 100000000000, 'verbose': False} 
-single   ensemble   0.7999   0.8290   4 mins   {'clf_skl_lr': {'learner': LogisticRegression(C=3.5968020458984277e-06, class_weight=None, dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=42,
-          solver='liblinear', tol=0.0001, verbose=0, warm_start=False), 'param': {'C': 0.0022053406657527768, 'penalty': 'l2', 'random_state': 42}, 'weight': 1.0}, 'clf_skl_rf': {'learner': RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-            max_depth=5, max_features=0.30000000000000004,
-            max_leaf_nodes=None, min_impurity_decrease=0.0,
-            min_impurity_split=None, min_samples_leaf=10,
-            min_samples_split=8, min_weight_fraction_leaf=0.0,
-            n_estimators=980, n_jobs=8, oob_score=False, random_state=42,
-            verbose=0, warm_start=False), 'param': {'max_depth': 4, 'max_features': 0.35000000000000003, 'min_samples_leaf': 13, 'min_samples_split': 12, 'n_estimators': 720, 'n_jobs': 8, 'random_state': 42, 'verbose': 0}, 'weight': 0.0}, 'clf_xgb_tree': {'learner': XGBClassifier(base_score=0.5, colsample_bylevel=0.5396627743771909,
-       colsample_bytree=0.7415625074248084, gamma=0.8970306326527139,
-       learning_rate=0.06, max_delta_step=0, max_depth=2,
-       min_child_weight=0.0008410210527472222, missing=None,
-       n_estimators=330, nthread=8, objective='binary:logistic',
-       reg_alpha=0.00043807657083657557, reg_lambda=7.988755966736581e-06,
-       scale_pos_weight=1, seed=42, silent=True,
-       subsample=0.6615534656977893), 'param': {'colsample_bylevel': 0.5438127363293197, 'colsample_bytree': 0.7159145275093577, 'gamma': 3.882802666325188e-09, 'learning_rate': 0.084, 'max_depth': 4, 'min_child_weight': 0.004079482115694249, 'n_estimators': 570, 'nthread': 8, 'reg_alpha': 0.35703682248339624, 'reg_lambda': 3.0604913895894548e-09, 'seed': 42, 'subsample': 0.9516741428430351}, 'weight': 0.7000000000000001}} 
-stacking   ensemble   0.8009   0.8005   2 mins   {'clf_skl_lr': {'learner': LogisticRegression(C=0.0023026499937874923, class_weight=None, dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=42,
-          solver='liblinear', tol=0.0001, verbose=0, warm_start=False), 'param': {'C': 0.0007513906357120155, 'penalty': 'l2', 'random_state': 42}, 'weight': 1.0}, 'clf_skl_rf': {'learner': RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-            max_depth=5, max_features=0.75, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=13, min_samples_split=8,
-            min_weight_fraction_leaf=0.0, n_estimators=670, n_jobs=8,
-            oob_score=False, random_state=42, verbose=0, warm_start=False), 'param': {'max_depth': 6, 'max_features': 0.4, 'min_samples_leaf': 5, 'min_samples_split': 6, 'n_estimators': 470, 'n_jobs': 8, 'random_state': 42, 'verbose': 0}, 'weight': 0.1}, 'clf_xgb_tree': {'learner': XGBClassifier(base_score=0.5, colsample_bylevel=0.7182162474300497,
-       colsample_bytree=0.8218791165929212, gamma=3.872407624212969e-06,
-       learning_rate=0.01, max_delta_step=0, max_depth=2,
-       min_child_weight=0.44440525162781847, missing=None,
-       n_estimators=990, nthread=8, objective='binary:logistic',
-       reg_alpha=0.019520138486204812, reg_lambda=4.84394544146452e-07,
-       scale_pos_weight=1, seed=42, silent=True,
-       subsample=0.527157627973496), 'param': {'colsample_bylevel': 0.9232692779786056, 'colsample_bytree': 0.7900481060845375, 'gamma': 0.020301663796582232, 'learning_rate': 0.006, 'max_depth': 3, 'min_child_weight': 7.2587839235075736e-06, 'n_estimators': 670, 'nthread': 8, 'reg_alpha': 6.234285701599528, 'reg_lambda': 0.02528484999784429, 'seed': 42, 'subsample': 0.5074926846254154}, 'weight': 0.9}} 
+task_mode   learner   auc_cv_mean   test_auc   refit_time   best_params 
+single   clf_skl_lr   0.5000   0.0000   0 secs   {'C': 2.3725232404669057e-05, 'penalty': 'l1', 'random_state': 42} 
+single   clf_xgb_tree   0.6895   0.0000   6 secs   {'colsample_bylevel': 0.7528993164351969, 'colsample_bytree': 0.6433350805735385, 'gamma': 0.011549749572134269, 'learning_rate': 0.018000000000000002, 'max_depth': 7, 'min_child_weight': 3.461766043048879e-07, 'n_estimators': 900, 'nthread': 8, 'reg_alpha': 2.3111184783927004e-07, 'reg_lambda': 0.009528243561867196, 'seed': 42, 'subsample': 0.7073797181198993} 
+single   clf_skl_rf   0.7403   0.0000   1 secs   {'max_depth': 6, 'max_features': 0.45, 'min_samples_leaf': 14, 'min_samples_split': 12, 'n_estimators': 700, 'n_jobs': 8, 'random_state': 42, 'verbose': 0} 

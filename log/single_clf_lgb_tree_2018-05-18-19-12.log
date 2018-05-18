@@ -1,0 +1,24 @@
+[2018-05-18 19:12:04,753] INFO: tpe_transform took 0.004438 seconds
+[2018-05-18 19:12:04,753] INFO: TPE using 0 trials
+[2018-05-18 19:12:04,756] INFO: ==================================================
+[2018-05-18 19:12:04,756] INFO: Task
+[2018-05-18 19:12:04,756] INFO:      single_Learner@clf_lgb_tree_Id@7
+[2018-05-18 19:12:04,757] INFO: Param
+[2018-05-18 19:12:04,757] INFO:      boosting_type: gbdt
+[2018-05-18 19:12:04,757] INFO:      colsample_bytree: 0.15000000000000002
+[2018-05-18 19:12:04,758] INFO:      learning_rate: 0.06
+[2018-05-18 19:12:04,758] INFO:      max_depth: 9
+[2018-05-18 19:12:04,758] INFO:      metric: auc
+[2018-05-18 19:12:04,758] INFO:      min_child_samples: 206
+[2018-05-18 19:12:04,759] INFO:      n_estimators: 500
+[2018-05-18 19:12:04,759] INFO:      n_jobs: 16
+[2018-05-18 19:12:04,759] INFO:      num_leaves: 825
+[2018-05-18 19:12:04,759] INFO:      objective: binary
+[2018-05-18 19:12:04,759] INFO:      random_state: 42
+[2018-05-18 19:12:04,760] INFO:      reg_alpha: 0.0006225257905515403
+[2018-05-18 19:12:04,760] INFO:      reg_lambda: 0.0004107964924896393
+[2018-05-18 19:12:04,760] INFO:      subsample: 0.7000000000000001
+[2018-05-18 19:12:04,761] INFO:      verbose: -1
+[2018-05-18 19:12:04,761] INFO: Result
+[2018-05-18 19:12:04,761] INFO:      Run     AUC     Shape
+[2018-05-18 19:12:04,778] INFO: job exception: b'Cannot construct Dataset since there are not useful features.                 It should be at least two unique rows.                 If the num_row (num_data) is small, you can set min_data=1 and min_data_in_bin=1 to fix this.                 Otherwise please make sure you are using the right dataset.'

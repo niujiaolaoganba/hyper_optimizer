@@ -74,6 +74,7 @@ class Task:
         self.test_auc = 0
         self.train_auc = 0
         self.train_logloss = 0
+        self.auc_cv_mean = 0
 
     def __str__(self):
         return "%s_Learner@%s%s" % (str(self.prefix), str(self.learner), str(self.suffix))
@@ -119,8 +120,11 @@ class Task:
             ))
 
         stacking_feature_test /= self.n_iter
-        auc_cv_mean = np.mean(auc_cv)
-        auc_cv_test = roc_auc_score(self.y_test, stacking_feature_test)
+        self.auc_cv_mean = np.mean(auc_cv)
+        if self.y_test is not None:
+            auc_cv_test = roc_auc_score(self.y_test, stacking_feature_test)
+        else:
+            auc_cv_test = 0
         end = time.time()
         time_cost = time_utils.time_diff(start, end)
 
@@ -134,7 +138,7 @@ class Task:
 
         if self.verbose:
             self.logger.info("AUC")
-            self.logger.info("     cv_mean: %.6f" % auc_cv_mean)
+            self.logger.info("     cv_mean: %.6f" % self.auc_cv_mean)
             self.logger.info("     cv_test: %.6f" % auc_cv_test)
             self.logger.info("Time")
             self.logger.info("     %s" % time_cost)
@@ -148,8 +152,11 @@ class Task:
         y_pred_train = self.learner.predict_proba(self.X_train)
         y_pred_test = self.learner.predict_proba(self.X_test)
         self.train_auc = roc_auc_score(self.y_train, y_pred_train)
-        self.test_auc = roc_auc_score(self.y_test, y_pred_test)
-        self.train_logloss = log_loss(self.y_test, y_pred_test)
+        if self.y_test is not None:
+            self.test_auc = roc_auc_score(self.y_test, y_pred_test)
+        else:
+            self.test_auc = 0
+        self.train_logloss = log_loss(self.y_train, y_pred_train)
         end = time.time()
         self.refit_time = time_utils.time_diff(start, end)
 
@@ -198,10 +205,10 @@ class TaskOptimizer:
                              self.n_iter,prefix, suffix, self.logger, self.verbose)
         self.task.go()
         result = {
-            "loss": -self.task.test_auc,
+            "loss": -self.task.auc_cv_mean,
             "attachments": {
                 "train_auc": self.task.train_auc,
-                "train_logloss": self.task.train_logloss,
+                "test_auc": self.task.test_auc,
                 "refit_time": self.task.refit_time,
             },
             "status": STATUS_OK,
@@ -237,14 +244,14 @@ class TaskOptimizer:
                 best_params = self.param_space._convert_int_param(best_params)
                 trial_loss = np.asarray(trials.losses(), dtype=float)
                 best_ind = np.argmin(trial_loss)
-                test_auc = - trial_loss[best_ind]
-                train_auc = trials.trial_attachments(trials.trials[best_ind])["train_auc"]
-                best_time = trials.trial_attachments(trials.trials[best_ind])["refit_time"]
+                auc_cv_mean = - trial_loss[best_ind]
+                test_auc = trials.trial_attachments(trials.trials[best_ind])["test_auc"]
+                refit_time = trials.trial_attachments(trials.trials[best_ind])["refit_time"]
 
                 with open(config.MODEL_COMPARE, 'a+') as f:
                     if line_index:
                         line_index = 0
-                        f.writelines("task_mode   learner   test_auc   train_auc   best_time   best_params \n")
+                        f.writelines("task_mode   learner   auc_cv_mean   test_auc   refit_time   best_params \n")
                     f.writelines("%s   %s   %.4f   %.4f   %s   %s \n" % (
-                    task_mode, learner, test_auc, train_auc, best_time, best_params))
+                    task_mode, learner, auc_cv_mean, test_auc, refit_time, best_params))
                 f.close()
